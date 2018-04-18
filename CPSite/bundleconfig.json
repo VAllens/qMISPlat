@@ -31,7 +31,7 @@
       "enabled": true,
       "renameLocals": false,
       "preserveImportantComments": true,
-      "termSemicolons": false, 
+      "termSemicolons": false,
       "evalTreatment": "ignore",
       "outputMode": "singleLine"
     },
@@ -42,6 +42,19 @@
     "outputFileName": "wwwroot/plat/tree/TreeEngine.min.js",
     "inputFiles": [
       "wwwroot/plat/tree/TreeEngine.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    // Optionally generate .map file
+    "sourceMap": false
+  },
+  {
+    "outputFileName": "wwwroot/plat/flow/flowengine.min.js",
+    "inputFiles": [
+      "wwwroot/plat/flow/flowengine.js"
     ],
     // Optionally specify minification options
     "minify": {

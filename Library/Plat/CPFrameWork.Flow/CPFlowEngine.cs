@@ -1034,17 +1034,20 @@ namespace CPFrameWork.Flow
             curTask.RevUserIsView = true;
             this._CPFlowInstanceTaskRep.Update(curTask);
             //更改状态为已读状态
-            string[] sArray = curTask.MsgIds.Split(',');
-            List<int> idCol = new List<int>();
-            for (int i = 0; i < sArray.Length; i++)
+            if (curTask.MsgIds != null && string.IsNullOrEmpty(curTask.MsgIds) == false)
             {
-                if (string.IsNullOrEmpty(sArray[i]) == false)
+                string[] sArray = curTask.MsgIds.Split(',');
+                List<int> idCol = new List<int>();
+                for (int i = 0; i < sArray.Length; i++)
                 {
-                    idCol.Add(int.Parse(sArray[i]));
+                    if (string.IsNullOrEmpty(sArray[i]) == false)
+                    {
+                        idCol.Add(int.Parse(sArray[i]));
+                    }
                 }
+                string errorMsg = "";
+                CPMsgs.Instance().UpdateMsgReadState(idCol, out errorMsg);
             }
-            string errorMsg = "";
-            CPMsgs.Instance().UpdateMsgReadState(idCol, out errorMsg);
             return true;
         }
         #endregion
@@ -1413,12 +1416,15 @@ namespace CPFrameWork.Flow
             List<CPFlowInstanceTask> taskCol = this.GetInstanceTask(insId, phaseId);
             List<int> idCol = new List<int>();
             taskCol.ForEach(t => {
-                string[] sArray = t.MsgIds.Split(',');
-                for (int i = 0; i < sArray.Length; i++)
+                if (t.MsgIds != null && string.IsNullOrEmpty(t.MsgIds) == false)
                 {
-                    if (string.IsNullOrEmpty(sArray[i]) == false)
+                    string[] sArray = t.MsgIds.Split(',');
+                    for (int i = 0; i < sArray.Length; i++)
                     {
-                        idCol.Add(int.Parse(sArray[i]));
+                        if (string.IsNullOrEmpty(sArray[i]) == false)
+                        {
+                            idCol.Add(int.Parse(sArray[i]));
+                        }
                     }
                 }
             });

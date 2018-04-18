@@ -1,9 +1,0 @@
--p C:\Program Files\dotnet\dotnet.exe
--pidFile E:\MyCloud\Code\CPSite\bin\IISSupport\pidfile.txt
--wd E:\MyCloud\Code\CPSite
--a exec "E:\MyCloud\Code\CPSite\bin\Debug\netcoreapp2.0\CPFrameWork.dll"
--debug
--pipe c987f85c-5894-4d84-8e2c-5b1e23aeb67a
--pr CPFrameWork
--owningPid 54144
--env ASPNETCORE_CONTENTROOT=E:\MyCloud\Code\CPSite|ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=Microsoft.AspNetCore.ApplicationInsights.HostingStartup|ASPNETCORE_ENVIRONMENT=Development|COMPLUS_ForceENC=1|

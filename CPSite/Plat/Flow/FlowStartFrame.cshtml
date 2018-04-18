@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>发起流程</title>
+    <meta charset="utf-8" />
+    <base target="_self" />
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <!-- 下面两句代码是做手机适配用的 ， 加上之后手机网页就会自动适配-->
+    <!--解决安卓手机点击文本框，会自动放大网页的问题-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">
+     
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" /> 
+</head>
+<body style="margin:0px; padding:0px; width:100%;  background-color: #f7f7f7;   overflow:hidden;">
+    <div style="margin:auto; padding:0px; width:1000px;     border:0px solid #e7e7e7;">
+        <iframe scrolling="auto" id="CPFlowStartFrame" class="" frameborder="0" style="height:100%; width:99%; border:0px solid red" src="~/Plat/Tree/TreeView?TreeCode=Tree201801170759340009"></iframe>
+    </div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $("#CPFlowStartFrame").height($(window).height()-4);
+
+    });
+
+</script>
+</html>

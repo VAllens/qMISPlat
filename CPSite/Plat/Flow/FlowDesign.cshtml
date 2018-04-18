@@ -1,0 +1,198 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>流程设计器</title>
+    <meta charset="utf-8" />
+    <base target="_self" />
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <!-- 下面两句代码是做手机适配用的 ， 加上之后手机网页就会自动适配-->
+    <!--解决安卓手机点击文本框，会自动放大网页的问题-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+    <!--layer ui-->
+    <!--layer ui-->
+    <script src="../../Plat/Common/layui/lay/modules/layer.js"></script>
+    <link rel="stylesheet" href="../../Plat/Common/layui/css/layui.css" media="all">
+    <script src="../../Plat/Common/layui/layui.js" charset="utf-8"></script>
+
+    <link type="text/css"
+          href="../../Plat/Flow/lib/jquery-ui-1.8.4.custom/css/smoothness/jquery-ui-1.8.4.custom.css"
+          rel="stylesheet" />
+    <script type="text/javascript" src="../../Plat/Flow/lib/raphael.js"></script>
+    <!--这行不能注释-->
+    <script type="text/javascript"
+            src="../../Plat/Flow/lib/jquery-ui-1.8.4.custom/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript"
+            src="../../Plat/Flow/lib/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Flow/myflow.js"></script>
+    <script type="text/javascript" src="../../Plat/Flow/myflow.jpdl4.js"></script>
+    <script type="text/javascript" src="../../Plat/Flow/myflow.editors.js"></script>
+    <script type="text/javascript" src="../../Plat/Flow/FlowDesignJS.js"></script>
+
+    <link href="../../Style/@ViewBag.CPSkin/Flow/FlowDesignStyle.css" type="text/css" rel="stylesheet" />
+
+
+    <style type="text/css">
+        /*以下样式不能删除*/
+        .node {
+        }
+
+        .selected {
+            /*background-color: #ddd;*/
+        }
+
+        .state {
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layui-row" id="FlowTop">
+        <div class="layui-col-xs4" style="border-bottom:1px solid #e6e6e6; height:50px; text-align:left; padding-left:20px; padding-top:5px;">
+            <input type="text" name="FlowName" id="FlowName" style="width:200px;" lay-verify="title" autocomplete="off" placeholder="请输入标题"   class="layui-input">
+        </div>
+        <div class="layui-col-xs2" style="border-bottom:1px solid #e6e6e6; height:50px; color:red; text-align:center; padding-right:20px; padding-top:15px;">
+            当前版本:<span id="spanFlowVerState"></span>
+        </div>
+        <div class="layui-col-xs6" style="border-bottom:1px solid #e6e6e6; height:50px; text-align:right; padding-right:20px; padding-top:5px;">
+            <button class="layui-btn layui-btn-normal" id="myflow_BasicInfo">流程基本信息</button>
+            <button class="layui-btn layui-btn-normal" id="myflow_save">保存</button>
+            <button class="layui-btn layui-btn-normal" id="myflow_Release">发布</button>
+            <button class="layui-btn layui-btn-normal" id="myflow_CreateNewVer">创建新版本</button>
+            <button class="layui-btn layui-btn-normal" id="myflow_RestoreVer" style="display:none;">还原至此版本</button>
+            <button class="layui-btn layui-btn-normal" id="myFlow_Refresh">刷新</button>
+        </div>
+    </div>
+    <div class="layui-row" id="FlowContext">
+        <div id="myflow_tools" style="border-right:1px solid #e6e6e6;  height:530px; float:left; width:150px; background:white;">
+            <div class="layui-row" style="border-bottom:1px solid #e6e6e6;background-color:#f0f0f0; height:35px; padding-top:15px; text-align:center;">
+                <div class="layui-col-xs12">
+                    工具集
+                </div>
+            </div>
+            <div class="layui-row">
+                <div class="node selectable layui-col-xs12 ToolRowCss" id="pointer">
+                    <div style="cursor:pointer;">
+                        <img src="../../Style/@ViewBag.CPSkin/Flow/img/Select.png" style="width:26px;height:26px;" />&nbsp;选择对象
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row">
+                <div class="node selectable layui-col-xs12 ToolRowCss" id="path">
+                    <div style="cursor:pointer;">
+                        <img src="../../Style/@ViewBag.CPSkin/Flow/img/Line.png" style="width:26px;height:26px;" />&nbsp;提交连线
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row">
+                <div class="node selectable layui-col-xs12 ToolRowCss" id="pathfallback">
+                    <div style="cursor:pointer;">
+                        <img src="../../Style/@ViewBag.CPSkin/Flow/img/Fallback.png" style="width:26px;height:26px;" />&nbsp;驳回连线
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row">
+                <div class="node state layui-col-xs12 ToolRowCss2" id="start" type="start">
+                    <div style="cursor:pointer;">
+                        <img src="../../Style/@ViewBag.CPSkin/Flow/img/Start.png" style="width:40px;height:40px;" />&nbsp;开始节点
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row">
+                <div class="node state layui-col-xs12 ToolRowCss2" id="task" type="task">
+                    <div style="cursor:pointer;">
+                        <img src="../../Style/@ViewBag.CPSkin/Flow/img/Normal.png" style="width:40px;height:40px;" />&nbsp;普通节点
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row">
+                <div class="node state layui-col-xs12 ToolRowCss2" id="state" type="state">
+                    <div style="cursor:pointer;">
+                        <img src="../../Style/@ViewBag.CPSkin/Flow/img/Pass.png" style="width:40px;height:40px;" />&nbsp;传阅节点
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row">
+                <div class="node state layui-col-xs12 ToolRowCss2" id="fork" type="fork">
+                    <div style="cursor:pointer;">
+                        <img src="../../Style/@ViewBag.CPSkin/Flow/img/Meet.png" style="width:40px;height:40px;" />&nbsp;会签节点
+                    </div>
+                </div>
+            </div>
+            <div class="layui-row">
+                <div class="node state layui-col-xs12 ToolRowCss2" id="end" type="end">
+                    <div style="cursor:pointer;">
+                        <img src="../../Style/@ViewBag.CPSkin/Flow/img/End.png" style="width:40px;height:40px;" />&nbsp;结束节点
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="FlowRight" style="float:left; margin-left:-150px;">
+            <div class="FlowContainer" id="myflow"></div>
+        </div>
+    </div>
+    @*<div id="myflow_props"
+             style="position: absolute; top: 30; right: 50; background-color: #fff; width: 220px; padding: 3px;"
+             class="ui-widget-content">
+            <div id="myflow_props_handle" class="ui-widget-header">属性</div>
+            <table border="1" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>aaa</td>
+                </tr>
+                <tr>
+                    <td>aaa</td>
+                </tr>
+            </table>
+            <div>&nbsp;</div>
+        </div>*@
+
+    <div id="PhaseEditor" style="display:none;">
+        <div class="layui-row" style="    height: 46px;text-align: center;margin-top:10px;">
+            <div class="layui-col-xs4"  style="padding-top:10px;">
+                阶段名称:
+            </div>
+            <div class="layui-col-xs8">
+                <input type="text" name="CurPhaseName" id="CurPhaseName" style="width:95%;" placeholder="请输入标题"  class="layui-input">
+            </div>
+        </div>
+        <div class="layui-row" style="    height: 46px;text-align: center">
+            <div class="layui-col-xs4" style="padding-top:10px;">
+                阶段类型:
+            </div>
+            <div class="layui-col-xs8">
+                <select id="CurPhaseType" style="width:95%;" class="layui-input layui-unselect">
+                    <option value="1" >开始节点</option>
+                    <option value="2">普通节点</option>
+                    <option value="3">会签节点</option>
+                    <option value="4">传阅节点</option>
+                    <option value="5">结束节点</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-row" style="    height: 46px;text-align: center">
+            <div class="layui-col-xs12"  style="padding-top:5px;">
+                <button class="layui-btn layui-btn-normal" onclick="PhaseEditorOK()">确定</button>
+                <button class="layui-btn layui-btn-normal" onclick="PhaseEditorCancel()">取消</button>
+                <button class="layui-btn layui-btn-normal" onclick="PhaseDetailConfig()">详细配置</button>
+            </div>
+            
+        </div>
+        
+    </div> 
+</body>
+</html>

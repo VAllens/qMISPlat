@@ -1,0 +1,123 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>表单</title>
+    <meta charset="utf-8" />
+    <base target="_self" />
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <!-- 下面两句代码是做手机适配用的 ， 加上之后手机网页就会自动适配-->
+    <!--解决安卓手机点击文本框，会自动放大网页的问题-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+  
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+    <!--layer ui-->
+    <link rel="stylesheet" href="../../Plat/Common/layui/css/layui.css" media="all">
+    <script type="text/javascript" charset="utf-8" src="../../Plat/Common/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../Plat/Common/ueditor/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="../../Plat/Common/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+    <style type="text/css">
+        div {
+            width: 100%;
+        }
+    </style>
+</head>
+<body style="overflow:hidden;" >
+    <div style="text-align:right;width:100%; border-bottom:1px solid #d4d4d4; height:50px;line-height:50px; 
+margin-bottom:5px;">双击在光标指定处插入
+        <button onclick="SaveData()" class="layui-btn layui-btn-normal" style="margin-right:50px;">保存表单</button>
+    </div>
+    <div style="margin:0px;  padding:0px;float:left;width:10px; text-align:left;">&nbsp;</div>
+    <div   id="divLeft"style="margin:0px;  padding:0px;float:left;width:18%; text-align:left; overflow:auto; ">
+      
+    </div>
+    <div id="divRight" style="margin:0px; padding:0px;float:left;width:80%; ">
+        <script id="editor" type="text/plain" style="width:100%;height:500px;">
+        </script>
+    </div>
+    <script type="text/javascript">
+        function AddField(tableName, fieldName)
+        {
+            var sValue = "{@@" + tableName + "." + fieldName + "@@}";
+            UE.getEditor('editor').execCommand('insertHtml', sValue);
+        }
+        var ssHTML = "";
+        function SaveData()
+        {
+            var sHTML = UE.getEditor('editor').getContent();
+            var obj = new Object();
+            obj.CurUserId = CPCurUserId;
+            obj.CurUserIden = CPCurUserIden;
+            obj.ViewId = $.CPGetQuery("ViewId");
+            obj.ViewHTML = sHTML;
+            var url = CPWebRootPath + "/api/FormEngine/SaveViewHTML"; 
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: JSON.stringify(obj),
+                contentType: 'application/json',
+                success: function (data) {
+                    if (data.Result == false) {
+                        alert(data.ErrorMsg);
+                        return false;
+                    }
+                    alert("保存成功！");
+                }
+            });
+        }
+        $(function () { 
+            $("#editor").height($(window).height() - 160);
+            $("#divLeft").height($(window).height() - 60);
+            //实例化编辑器
+            //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+            var ue = UE.getEditor('editor', {
+                allowDivTransToP: false,
+                allHtmlEnabled: true,
+                disabledTableInTable: false
+            });
+            ue.ready(function () {
+                var url = CPWebRootPath + "/api/FormEngine/GetFormViewByViewId?ViewId=" + $.CPGetQuery("ViewId")
+                    + "&CurUserId=" + CPCurUserId + "&CurUserIden=" + CPCurUserIden;
+                $.getJSON(url, function (data) {
+                    //console.log(data);
+                    if (data.Result == false) {
+                        alert(data.ErrorMsg);
+                        return false;
+                    }
+                    var sHTML = "";
+                    $.each(data.FieldCol, function (nIndex, nObj) {
+                        if (nObj.IsChildTable == false) {
+                            sHTML += "<div style=\"margin-top:5px; \"><button ondblclick=\"AddField('" + nObj.TableName + "','" + nObj.FieldName + "')\" class=\"layui-btn layui-btn-normal\">" + nObj.TableName + "." + nObj.FieldName + "</button></div>";
+                        }
+                    });
+                    $("#divLeft").html(sHTML);
+                    //UE.getEditor('editor').setContent(data.View.FormViewHTML, false);
+                    //  UE.getEditor('editor').execCommand('insertHtml', data.View.FormViewHTML)
+                    UE.getEditor('editor').setContent(data.View.FormViewHTML);
+                });
+            });
+
+         
+        });
+      
+
+  
+    </script>
+</body>
+</html>

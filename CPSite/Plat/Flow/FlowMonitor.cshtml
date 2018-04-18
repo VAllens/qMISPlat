@@ -1,0 +1,93 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>流程监控</title>
+    <meta charset="utf-8" />
+    <base target="_self" />
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden) 
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+    <!--layer ui-->
+    <!--layer ui-->
+    <script src="../../Plat/Common/layui/lay/modules/layer.js"></script>
+    <link rel="stylesheet" href="../../Plat/Common/layui/css/layui.css" media="all">
+    <script src="../../Plat/Common/layui/layui.js" charset="utf-8"></script>
+
+    <link type="text/css"
+          href="../../Plat/Flow/lib/jquery-ui-1.8.4.custom/css/smoothness/jquery-ui-1.8.4.custom.css"
+          rel="stylesheet" />
+    <script type="text/javascript" src="../../Plat/Flow/lib/raphael.js"></script>
+    <!--这行不能注释-->
+    <script type="text/javascript"
+            src="../../Plat/Flow/lib/jquery-ui-1.8.4.custom/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript"
+            src="../../Plat/Flow/lib/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Flow/myflow.js"></script>
+    <script type="text/javascript" src="../../Plat/Flow/myflow.jpdl4.js"></script>
+    <script type="text/javascript" src="../../Plat/Flow/myflow.editors.js"></script> 
+    <script type="text/javascript" src="../../Plat/Flow/FlowMonitor.js"></script>
+    <link href="../../Style/@ViewBag.CPSkin/Flow/FlowDesignStyle.css" type="text/css" rel="stylesheet" />
+
+
+
+    <style type="text/css">
+        /*以下样式不能删除*/
+        .node {
+        }
+
+        .selected {
+            /*background-color: #ddd;*/
+        }
+
+        .state {
+        }
+    </style> 
+</head>
+
+<body>
+    <div class="layui-row" id="FlowTop">
+        <div class="layui-col-xs12" style="border-bottom:1px solid #e6e6e6; height:50px; text-align:left; padding-left:20px; padding-top:15px;">
+            <span style="color:#00ff00;">绿线表示路径已办理过</span>
+            <span style="color:red; margin-left:10px;">红色表示流程处于当前节点</span>
+            <span style="color:#000;margin-left:10px;">黑色表示未办理过</span>
+        </div> 
+    </div>
+    <div id="myflow">
+    </div>
+    <div id="PhaseEditor" style="display:none;">
+        <div id="PhaseLogList">
+            <table lay-filter="parse-table-demo">
+                <thead>
+                    <tr>
+                        <th lay-data="{field:'SubmitPhaseNames', width:140}">提交阶段</th>
+                        <th lay-data="{field:'RevTime', width:170}">提交时间</th>
+                        <th lay-data="{field:'SubmitUserNames', width:90}">提交人</th>
+                        <th lay-data="{field:'RevUserName', width: 90}">办理人</th>
+                        <th lay-data="{field:'TaskState', width: 100}">办理状态</th>
+                        <th lay-data="{field:'TaskManaTime', width: 170}">办理时间</th> 
+                    </tr>
+                </thead>
+                <tbody id="PhaseLogListContext">
+                    
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</body>
+</html>

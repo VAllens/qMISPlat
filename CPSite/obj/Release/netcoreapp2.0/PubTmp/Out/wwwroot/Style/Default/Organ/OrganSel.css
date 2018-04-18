@@ -1,0 +1,49 @@
+﻿.SearchTextBoxCss {
+    padding-left: 10px;
+    border: 1px solid #e3e3e3;
+    height: 32px;
+    width: 350px;
+}
+.SearchBtnCss {
+    border-radius: 0px;
+    width: 90px;
+}
+
+.k-button:hover {
+    border: 1px solid #ea2328;
+    color: white;
+    background-color: #ea2328;
+}
+
+    .k-button:hover > img {
+        /* Chrome, Safari, Opera */
+        -webkit-filter: brightness(500%);
+        filter: brightness(500%);
+    } 
+
+
+/**** 树样式 start *****/
+.k-treeview .k-in {
+    font-size: 14px;
+    color: #515151;
+    font-family: 'Microsoft YaHei';
+}
+
+.k-treeview .k-state-selected {
+    font-size: 14px;
+    color: #e92328;
+    font-family: 'Microsoft YaHei';
+    background-color: white;
+    outline: none;
+}
+
+.k-treeview .k-in.k-state-hover {
+    color: #515151;
+}
+ 
+/**** 树样式 end *****/
+
+
+
+
+

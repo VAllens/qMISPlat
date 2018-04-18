@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library\Common\CPFrameWork.Global\CPFrameWork.Global.csproj" />
+    <ProjectReference Include="..\..\Library\Common\CPFrameWork.Utility\CPFrameWork.Utility.csproj" />
+    <ProjectReference Include="..\..\Library\Common\NVelocity\NVelocity.csproj" />
+    <ProjectReference Include="..\..\Library\Plat\CPFrameWork.Organ\CPFrameWork.Organ.csproj" />
+    <ProjectReference Include="..\..\Library\Plat\CPFrameWork.UIInterface\CPFrameWork.UIInterface.csproj" />
+  </ItemGroup>
+
+</Project>

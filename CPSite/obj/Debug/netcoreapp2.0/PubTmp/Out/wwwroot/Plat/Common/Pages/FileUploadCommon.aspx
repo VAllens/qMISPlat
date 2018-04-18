@@ -1,0 +1,152 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="FileUploadCommon.aspx.cs" Inherits="CPFrameWorkV1.Plat.Common.Pages.FileUploadCommon" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>文件上传</title>
+  
+    <!-- Bootstrap styles -->
+<link rel="stylesheet" type="text/css" href="/CPSite/Plat/Common/dropzone/min/basic.min.css">
+<link rel="stylesheet" type="text/css" href="/CPSite/Plat/Common/dropzone/min/dropzone.min.css">
+<script src="/CPSite/Plat/Common/dropzone/min/dropzone.min.js"></script>
+    <script src="/CPSite/Plat/Common/JS/jquery-3.2.1.min.js"></script>
+    
+<style>
+    body{
+        font-family:'Microsoft YaHei';
+        font-size:14px;
+    }
+	.dropzone {
+    border: 2px dashed #0087F7;
+    border-radius: 5px;
+    background: white;
+}
+	
+</style>
+</head>
+<body>
+   
+    <form id="form1" runat="server">
+  <div  id="doc_area" class="dropzone needsclick dz-clickable dz-message needsclick">
+  
+  </div>
+      <div  style="width:100%;text-align:center; height:35px;
+     padding-top:6px;
+     background-color:white;
+     border:0px solid #e7e7e7; margin-top:10px;">
+            <input type="button"  value="确定" style="cursor:pointer;height:30px; width:50px;"  onclick="OnOK()" />
+          <input type="button"  value="取消" style="cursor:pointer;margin-left:10px;height:30px; width:50px;" onclick="OnCancel()"  />
+        </div>   
+       <script type="text/javascript">
+           var _ReturnMethod = "<%=_ReturnMethod%>";
+           var _FilePath = "<%=_FilePath%>";
+           Dropzone.autoDiscover = false; 
+           var myDropzone = new Dropzone("div#doc_area", {
+               url: "/cpsite/plat/common/pages/saveuploadfile.aspx?FilePath=" + escape(_FilePath),
+               maxFilesize: 1024, // MB
+               maxFiles: 100,
+               uploadMultiple: false,
+               //acceptedFiles: ".pdf, .doc,.txt,.docx,.xlsx,.xls",
+               addRemoveLinks: true,
+               dictRemoveFile: "删除",
+               dictFileTooBig: "文件过大上传文件最大支持.",
+               dictDefaultMessage:"点击上传文件"
+           });
+           myDropzone.on("addedfile", function (file) {
+               /* Maybe display some more file information on your page */
+           });
+           myDropzone.on("complete", function (data) {
+              // console.log(data);
+           });
+           function OnCancel()
+           {
+               window.close();
+           }
+           function OnOK()
+           {
+               var errorFileNames = "";
+               var sFileNames = "";
+               var sFilePaths = "";
+               $.each(myDropzone.files, function (nIndex, nObj) {
+                   if(nObj.status == "error")
+                   {
+                       //上传失败
+                       if(errorFileNames == "")
+                       {
+                           errorFileNames = nObj.name;
+                       }
+                       else
+                       {
+                           errorFileNames += "," + nObj.name;
+                       }
+                   }
+                   else if (nObj.status == "success") {
+                       if (sFilePaths == "") {
+                           sFilePaths = _FilePath +   nObj.name;
+                           sFileNames =  nObj.name;
+                       }
+                       else {
+                           sFilePaths += "|" + _FilePath +   nObj.name;
+                           sFileNames += "," +  nObj.name;
+                       }
+                   }
+               });
+               if(errorFileNames != "")
+               {
+                   alert("文件【" + errorFileNames + "】上传失败，请先删除或重新上传再点击确定！");
+                   return;
+               }
+               var obj = new Object();
+               obj.FileNames = sFileNames;
+               obj.FilePaths = sFilePaths;
+               window.opener.CPShowModalDialogReturnArgs = obj;
+               var s = "window.opener." + _ReturnMethod;
+               eval(s);
+               window.close();
+           }
+       </script>
+
+      <%-- 配置选项
+
+参数                        	描述                        
+url            	除了form元素以外的其他元素必须指定该参数(或当form元素没有操作属性)。您还可以提供一个函数,参数为files以及必须返回url(since v3.12.0)            
+method            	默认为"post",必要的时候你也可以设置为"put"。 您还可以提供一个函数,参数为files以及必须返回这个method(since v3.12.0)            
+parallelUploads            	同时上传多少个文件。(更多信息参见队列文件上传部分)            
+maxFilesize            	单位 MB            
+filesizeBase            	默认1000。这个定义的基础是否应该使用1000或1024来计算文件大小。1000是有效的,因为1000个字节等于1千字节,1024字节= 1 Kibibyte。你可以改变为1024，如果你不在乎的有效性。            
+paramName            	文件上传后端接收的参数名。默认file。注意:如果你设置uploadMultiple为true,那么Dropzone会将[]附加到这个名字，也就是后端接收的是一个file[]数组。            
+uploadMultiple            	Dropzone是否在一个请求中发送多个文件。如果它设置为true,然后fallback部分的input元素须有multiple属性。这个选项也会触发其他事件(如processingmultiple)。有关更多信息,请参见事件部分。            
+headers            	一个向服务器发送附加头的对象。如:headers: { "My-Awesome-Header": "header value" }            
+addRemoveLinks            	这将添加一个链接到每个文件，删除或取消预览文件(如果已经上传)。dictCancelUpload, dictCancelUploadConfirmation and dictRemoveFile三个参数可选。            
+previewsContainer            	定义文件预览显示。如果为null就使用 Dropzone 默认的。可以使用一段普通的html元素或css选择器。被选择的html元素必须包含dropzone-previews样式类确保预览显示正常。            
+clickable            	如果为true,dropzone元素本身将是可点击的,如果false将不可被点击。此外，还可以是一段普通的html或者css选择器，表示点击该元素触发资源管理器。            
+createImageThumbnails            	
+maxThumbnailFilesize            	单位 MB。文件名超过这个极限时,缩略图将不会生成。            
+thumbnailWidth            	如果为null,将使用图像的比例来计算它。            
+thumbnailHeight            	与thumbnailWidth一样。如果两者都是null,图像将不会调整。            
+maxFiles            	如果不为null,定义多少个文件将被处理。如果超过,事件maxfilesexceeded将被调用。相应地dropzone元素得到了类dz-max?files-reached，因此你可以提供视觉反馈。            
+resize            	创建调整信息时被调用的函数。file作为函数第一个参数，同时必须返回一个对象包含srcX, srcY, srcWidth 、srcHeight 和相同的 trg*。这些值将被用于ctx.drawImage()函数。            
+init            	Dropzone初始化时调用的函数。你能在这个函数中设置事件侦听器。            
+acceptedFiles            	accept函数默认的实现函数，用于检查文件的mime类型或扩展。这是一个逗号分隔的mime类型和文件扩展名的数组。如。image/*,application/pdf,.psd。如果Dropzone是clickable,此选项将被用作accept函数的参数输入。            
+accept            	一个接收file和done函数作为参数输入的函数。如果done函数调用无参数,文件会被处理。如果你在done函数中传入了参数(比如错误信息)文件将不会被上传。如果文件太大或不匹配的mime类型这个函数不会调用。            
+autoProcessQueue            	当设置为false,你必须自身调用myDropzone.processQueue()上传文件。有关更多信息,请参见下面有关处理队列。            
+previewTemplate            	一个字符串,其中包含模板用于每一个图像。改变它满足你的需求,但确保正确地提供所有元素。你可以在页面中建立这样一个容器:id="preview-template"(设置style="display: none;"),然后这样设置：previewTemplate: document.querySelector('preview-template').innerHTML。            
+forceFallback            	默认值为false。如果为true,fallback将被强行使用。这是非常有用的测试服务器实现首要方式,确保一切如预期所想，并测试你的fallback显示如何。            
+fallback            	当浏览器不支持时调用的函数。默认实现显示了fallback内的input域并添加一个文本。            
+为自定义的 dropzone,你也可以使用如下这些选项            
+dictDefaultMessage            	任何文件被拖拽进区域之前显示的信息。这通常是被一个图像,但默认为“Drop files here to upload”。            
+dictFallbackMessage            	如果浏览器不支持,默认消息将被替换为这个文本。默认为“Your browser does not support drag'n'drop file uploads.”。            
+dictFallbackText            	这将被添加在input file之前。如果你提供一个fallback元素,或者该选项为空该选项将被忽略。默认为“Please use the fallback form below to upload your files like in the olden days.”。            
+dictInvalidFileType            	如果文件类型不匹配时显示的错误消息。            
+dictFileTooBig            	当文件太大时显示。{{filesize}}` 和 {{maxFilesize}}` 将被替换。            
+dictResponseError            	如果服务器响应是无效的时显示的错误消息。{{statusCode}}` 将被替换为服务器端返回的状态码。            
+dictCancelUpload            	如果addRemoveLinks为true,文本用于取消上传链接的文字。            
+dictCancelUploadConfirmation            	如果addRemoveLinks为true,文本用于取消上传的文字。            
+dictRemoveFile            	如果addRemoveLinks为true,用于删除一个文件的文本。            
+dictMaxFilesExceeded            	如果设置了maxFiles,这将是超过了设置的时候的错误消息。     --%>
+ </form>
+</body>  
+    
+</html>

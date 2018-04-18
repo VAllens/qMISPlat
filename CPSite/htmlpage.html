@@ -1,0 +1,350 @@
+﻿{
+    states: {
+        rect1: {
+            type: 'start',
+            text: {
+                text: '开始'
+            },
+            attr: {
+                x: 507,
+                y: 63,
+                width: 50,
+                height: 50
+            },
+            props: {
+                text: {
+                    value: '开始'
+                },
+                temp1: {
+                    value: ''
+                },
+                temp2: {
+                    value: ''
+                }
+            }
+        },
+        rect2: {
+            type: 'state',
+            text: {
+                text: '状态2'
+            },
+            attr: {
+                x: 489,
+                y: 286,
+                width: 100,
+                height: 50
+            },
+            props: {
+                text: {
+                    value: '状态2'
+                },
+                temp1: {
+                    value: ''
+                },
+                temp2: {
+                    value: ''
+                }
+            }
+        },
+        rect3: {
+            type: 'task',
+            text: {
+                text: '任务1'
+            },
+            attr: {
+                x: 311,
+                y: 284,
+                width: 100,
+                height: 50
+            },
+            props: {
+                text: {
+                    value: '任务1'
+                },
+                assignee: {
+                    value: ''
+                },
+                desc: {
+                    value: ''
+                },
+                form: {
+                    value: ''
+                },
+                temp1: {
+                    value: ''
+                },
+                temp2: {
+                    value: ''
+                }
+            }
+        },
+        rect4: {
+            type: 'task',
+            text: {
+                text: '任务3'
+            },
+            attr: {
+                x: 675,
+                y: 287,
+                width: 100,
+                height: 50
+            },
+            props: {
+                text: {
+                    value: '任务3'
+                },
+                assignee: {
+                    value: ''
+                },
+                desc: {
+                    value: ''
+                },
+                form: {
+                    value: ''
+                },
+                temp1: {
+                    value: ''
+                },
+                temp2: {
+                    value: ''
+                }
+            }
+        },
+        rect5: {
+            type: 'fork',
+            text: {
+                text: '分支'
+            },
+            attr: {
+                x: 509,
+                y: 176,
+                width: 50,
+                height: 50
+            },
+            props: {
+                text: {
+                    value: '分支'
+                },
+                temp1: {
+                    value: ''
+                },
+                temp2: {
+                    value: ''
+                }
+            }
+        },
+        rect6: {
+            type: 'join',
+            text: {
+                text: '合并'
+            },
+            attr: {
+                x: 517,
+                y: 398,
+                width: 50,
+                height: 50
+            },
+            props: {
+                text: {
+                    value: '合并'
+                },
+                temp1: {
+                    value: ''
+                },
+                temp2: {
+                    value: ''
+                }
+            }
+        },
+        rect7: {
+            type: 'end',
+            text: {
+                text: '结束'
+            },
+            attr: {
+                x: 519,
+                y: 517,
+                width: 50,
+                height: 50
+            },
+            props: {
+                text: {
+                    value: '结束'
+                },
+                temp1: {
+                    value: ''
+                },
+                temp2: {
+                    value: ''
+                }
+            }
+        }
+    },
+    paths: {
+        path8: {
+            from: 'rect1',
+            to: 'rect5',
+            dots: [
+
+            ],
+            text: {
+                text: 'TO分支',
+                textPos: {
+                    x: 55,
+                    y: -8
+                }
+            },
+            props: {
+                text: {
+                    value: 'TO分支'
+                }
+            }
+        },
+        path9: {
+            from: 'rect5',
+            to: 'rect2',
+            dots: [
+
+            ],
+            text: {
+                text: 'TO状态2',
+                textPos: {
+                    x: 28,
+                    y: -4
+                }
+            },
+            props: {
+                text: {
+                    value: 'TO状态2'
+                }
+            }
+        },
+        path10: {
+            from: 'rect2',
+            to: 'rect6',
+            dots: [
+
+            ],
+            text: {
+                text: 'TO合并',
+                textPos: {
+                    x: 25,
+                    y: -10
+                }
+            },
+            props: {
+                text: {
+                    value: 'TO合并'
+                }
+            }
+        },
+        path11: {
+            from: 'rect6',
+            to: 'rect7',
+            dots: [
+
+            ],
+            text: {
+                text: 'TO结束ddd',
+                textPos: {
+                    x: 31,
+                    y: -10
+                }
+            },
+            props: {
+                text: {
+                    value: ''
+                }
+            }
+        },
+        path12: {
+            from: 'rect5',
+            to: 'rect3',
+            dots: [
+
+            ],
+            text: {
+                text: 'TO任务1',
+                textPos: {
+                    x: -21,
+                    y: -10
+                }
+            },
+            props: {
+                text: {
+                    value: 'TO任务1'
+                }
+            }
+        },
+        path13: {
+            from: 'rect3',
+            to: 'rect6',
+            dots: [
+
+            ],
+            text: {
+                text: 'TO合并',
+                textPos: {
+                    x: -34,
+                    y: 21
+                }
+            },
+            props: {
+                text: {
+                    value: 'TO合并'
+                }
+            }
+        },
+        path14: {
+            from: 'rect5',
+            to: 'rect4',
+            dots: [
+
+            ],
+            text: {
+                text: 'TO任务3',
+                textPos: {
+                    x: 55,
+                    y: -17
+                }
+            },
+            props: {
+                text: {
+                    value: 'TO任务3'
+                }
+            }
+        },
+        path15: {
+            from: 'rect4',
+            to: 'rect6',
+            dots: [
+
+            ],
+            text: {
+                text: 'TO合并',
+                textPos: {
+                    x: 30,
+                    y: 18
+                }
+            },
+            props: {
+                text: {
+                    value: 'TO合并'
+                }
+            }
+        }
+    },
+    props: {
+        props: {
+            name: {
+                value: '新建流程'
+            },
+            key: {
+                value: ''
+            },
+            desc: {
+                value: ''
+            }
+        }
+    }
+}

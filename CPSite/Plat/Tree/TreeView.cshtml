@@ -1,0 +1,65 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>树</title>
+    <meta charset="utf-8" />
+    <base target="_self" />
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script> 
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">  
+  
+    <!-- kendo ui-->
+    <link rel="stylesheet" href="../../Style/Kendo/kendo.common.min.css" />
+    <link rel="stylesheet" href="../../Style/Kendo/kendo.bootstrap.min.css" />   
+    <script src="../../Plat/Common/Kendo/js/kendo.core.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.data.odata.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.data.xml.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.data.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.userevents.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.draganddrop.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.treeview.draganddrop.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.button.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.treeview.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.resizable.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.splitter.min.js"></script>
+
+    <!--layer ui-->
+    <link rel="stylesheet" href="../../Plat/Common/layui/css/layui.css" media="all">
+    <script src="../../Plat/Common/layui/lay/modules/layer.js"></script>
+    <script src="../../Plat/Common/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../Plat/Tree/@ViewBag.TreeJS"></script>
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+    <link href="../../Style/@ViewBag.CPSkin/Tree/TreeStyle.css" type="text/css" rel="stylesheet" />
+
+   
+</head>
+<body>
+    <script id="treeview-template" type="text/kendo-ui-template">
+        <span ondblclick="CPTreeNodedblClick('#: item.NodeId #')"><i class="icon iconfont #: item.NodeIcon #" style="font-size:20px;vertical-align: middle;padding-right:2px;"></i>#: item.NodeTitle #</span>
+    </script>
+    <div id="CPTreeContainer" >
+        <div id="left-pane">
+            <div id="CPTreeButtonDiv">
+            </div>
+            <div id="CPTreeDiv">
+            </div>
+        </div>
+        <div id="center-pane">
+            <iframe scrolling="auto" id="CPTreeFrame" class="" frameborder="0" style="height:400px; width:99%; border:0px solid red" src=""></iframe>
+        </div> 
+    </div>
+    <div id="divCPTreeJSContainer" style="display:none;"></div>
+</body>
+</html>

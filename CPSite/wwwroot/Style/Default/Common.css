@@ -1,0 +1,33 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei UI";
+    outline: none;
+}
+input, select, option, textarea, div,button {
+    outline: none;
+}
+.layerAlterclass {
+    background-color: #FF5722;
+    color: white;
+}
+.BlueButton { 
+    display: inline-block;
+    vertical-align: middle;
+    padding: 12px 24px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #27A9E3;
+    border-radius: 3px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    width: 100%;
+}
+ 

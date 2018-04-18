@@ -1,0 +1,91 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>业务配置开发平台</title>
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+    
+    <link rel="stylesheet" href="../../Plat/Common/layui/css/layui.css" media="all">
+    <script src="../../Plat/Common/layui/lay/modules/layer.js"></script>
+    <script src="../../Plat/Common/layui/layui.js" charset="utf-8"></script>
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">MIS业务定制管理器</div>           
+            <ul class="layui-nav layui-layout-right" >
+                <li class="layui-nav-item"><a href="@ViewBag.CPWebRootPath2/Plat/Common/Help" target="_blank">配置开发帮助文档</a></li>
+                <li class="layui-nav-item"  >                       
+                            当前版本：1.0.0  
+                </li>                
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <li class="layui-nav-item layui-nav-itemed">
+                        <a class="" href="javascript:;">业务构建配置</a>
+                        <dl class="layui-nav-child"> 
+                            <dd><a href="javascript:;" onclick="ToUrl('/Plat/Tab/TabView?TabCode=Tab0002&SysId=2')" target="CPFrameMenu">业务配置</a></dd>
+                            <dd><a href="javascript:;" onclick="ToUrl('/Plat/Tree/TreeView?TreeCode=Tree201711191823350008')" target="CPFrameMenu">流程配置</a></dd>
+                            <dd><a href="javascript:;" onclick="ToUrl('/Plat/Grid/GridView?GridCode=Grid201710300916120016')" target="CPFrameMenu">系统参数配置</a></dd>                           
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                        <a href="javascript:;">平台基础配置</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;" onclick="ToUrl('/Plat/Tab/TabView?TabCode=Tab0002&SysId=1')" target="CPFrameMenu">平台配置</a></dd>
+                        </dl>
+                    </li>
+                </ul>
+              
+            </div>
+
+        </div>
+
+        <div class="layui-body" style="border:0px solid red;bottom:0px; overflow:hidden;">
+            <!-- 内容主体区域 -->
+            <iframe scrolling="auto" id="CPFrameMenu" class="" frameborder="0" style="width:100%;height:400px;z-index:999999"
+                    src="@ViewBag.DefaultUrl"></iframe>
+        </div>
+       
+    </div>
+    <script>
+        //定义是框架菜单
+        var Globa_IsCPMenuFrame = "true";
+//JavaScript代码区域
+layui.use('element', function(){
+  var element = layui.element;
+
+        });
+        //获取本页面里通过layer产生弹出层的iframe
+        function CPGetContextFrame() {
+            return document.getElementById("CPFrameMenu").contentWindow;
+        }
+        function ToUrl(url)
+        {
+            url = CPWebRootPath + url;
+            $("#CPFrameMenu").attr("src", url);
+
+        }
+        $(function () {
+            var nH = $(window).height() - 50;           
+            $("#CPFrameMenu").height(nH);
+        });
+    </script>
+</body>
+</html>

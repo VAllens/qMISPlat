@@ -1,0 +1,15 @@
+﻿<script>
+    //点击树节点执行方法
+    function FlowTreeNodeClick() {
+        var url = "/Plat/Grid/GridView?GridCode=Grid201711191911020025";
+        url += "&FlowClassId=" + CPTreeGlobal_CurSelNodeData.NodeAttrEx;
+        CPTreeSetFrameUrl(url);
+    }
+    //新增
+    function AddFlowClass() {
+        //console.log(CPTreeGlobal_CurSelNodeData);
+        var url = "/Plat/Form/FormView?FormCode=Form201711191820250029&SceneCode=Scene201711191821200031&ViewCode=View201711191821200032&DeviceType=1&InitGroupCode=Group201711191822260024";
+        OpenNewModel(url, "新增", 500, 400);
+    }
+  
+</script>

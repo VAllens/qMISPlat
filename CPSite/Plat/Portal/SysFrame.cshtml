@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <title>@ViewBag.SystemTitle</title>
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">
+
+    <link rel="stylesheet" href="../../Plat/Common/layui/css/layui.css" media="all">
+    <script src="../../Plat/Common/layui/lay/modules/layer.js"></script>
+    <script src="../../Plat/Common/layui/layui.js" charset="utf-8"></script>
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../../Style/@ViewBag.CPSkin/Portal/SysFrame.css">
+    <link href="../../Plat/Common/jquery.mCustomScrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../Plat/Common/jquery.mCustomScrollbar/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/jquery.mCustomScrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Portal/SysFrame.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top bootsnav" id="CPFrameTopNav" style="min-height:48px;height:48px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div style="padding-top:14px;">@ViewBag.SystemTitle</div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-right nav-actions" style="padding-top:4px;">
+                    <li class="navbar-li" style="display:;">
+                        <a href="">
+                            <i class="icon iconfont icon-activity" style="font-size:26px;"></i>
+                        </a>
+                        <ul class="dropdown-menu system-list" style="height: 407px; padding-top: 0px; margin-top: 2px; padding-bottom: 0px; margin-bottom: 0px;left: -80px;border:0">
+                            <li>
+                                <a style="padding: 0px 0px;" href="javascript:;" onclick="window.location='?SysId=21';">
+                                    <i class="icon iconfont icon-other" style="font-size:24px;vertical-align:middle;"></i>系统管理
+                                </a>
+                            </li>
+                            <li>
+                                <a style="padding: 0px 0px;" href="javascript:;" onclick="window.location='?SysId=21';">
+                                    <i class="icon iconfont icon-other" style="font-size:24px;vertical-align:middle;"></i>系统管理
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                   
+                    <li>
+                        <a href="javascript:;" onclick="LoginOut();" title="注销">
+                            <i class="icon iconfont icon-kaiguan" style="font-size:30px;"></i>
+                        </a>
+                    </li>
+                    <li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="leaf-nav">
+        <div class="all-nav" id="LeftMenuContainer">
+            <div class="home">
+                <a class="home-logo" href="javascript:;" onclick="UserPhotoClick(@ViewBag.UserId)">
+                    <h1>
+                        <!-- <i class="fa fa-leaf"></i> -->
+                        <img src="@ViewBag.UserPhotoPath" alt="" style="border-radius:70px;width:70px;height:70px;">
+                    </h1>
+                    @ViewBag.UserName
+                </a>
+            </div>
+            @*<div class="item">
+                <div class="product">
+                    <a target="_blank">
+                        <h1>
+                            <i class="icon iconfont icon-shielding_fill" style="  font-size:40px;"></i>
+                        </h1>
+                        综合办公
+                    </a>
+                </div>
+                <div class="product-wrap pos03">
+                    <h2>
+                        <i class="fa fa-align-left"></i> 综合办公
+                    </h2>
+                    <div class="gdt" style="height:90%">
+                        <ul class="list-wrap">
+                            <li class="ng-scope">
+                                <p href="##">
+                                    <span class="fa fa-bars fa-fw"></span>
+                                    <span class="level-title ng-binding">企业介绍</span>
+                                </p>
+                            </li>
+                            <li class="ng-scope">
+                                <p style="background-color:#e7e7e7">
+                                    <span class="fa fa-bars fa-fw"></span>
+                                    <span class="level-title ng-binding">组织机构</span>
+                                    <span class="icon iconfont icon-unfold right"></span>
+                                </p>
+                                <ul>
+                                    <li  >
+                                        <p href="">
+                                            <span class="fa fa-bars fa-fw"></span>
+                                            <span class="level-title ng-binding">介绍信申请</span>
+                                        </p>
+                                    </li>
+                                    <li ng-click="OpenFrameMainClick(itemChild)" ng-repeat="itemChild in item.ChildSingList" class="ng-scope">
+                                        <p href="">
+                                            <span class="fa fa-bars fa-fw"></span>
+                                            <span class="level-title ng-binding">行政会议申请</span>
+                                        </p>
+                                    </li>
+                                    <li ng-click="OpenFrameMainClick(itemChild)" ng-repeat="itemChild in item.ChildSingList" class="ng-scope">
+                                        <p href="">
+                                            <span class="fa fa-bars fa-fw"></span>
+                                            <span class="level-title ng-binding">组织机构</span>
+                                        </p>
+                                    </li>
+                                    <li ng-click="OpenFrameMainClick(itemChild)" ng-repeat="itemChild in item.ChildSingList" class="ng-scope">
+                                        <p href="">
+                                            <span class="fa fa-bars fa-fw"></span>
+                                            <span class="level-title ng-binding">缴费变更申请</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>*@
+        </div>
+    </div>
+    <!--end leaf-nav-->
+    <div class="leaf-main-content-wrap">
+        <div class="leaf-main-content">
+            <!-- 导航 -->
+            @*<div class="leaf-location-wrap">
+                <div class="leaf-location">
+                    <strong>当前位置：</strong><a href="">综合办公</a> &gt; <a href="">车辆申请</a> &gt; <a href="">菜单和导航</a> &gt;
+                </div>
+            </div>*@
+            <!-- 导航 -->
+            <div class="leaf-main-content-content">
+                <div class="layui-tab layui-tab-card"   lay-filter="CPFrameModuleTab" lay-allowclose="true" style="box-shadow: 0 0 0 0 rgba(0,0,0,.1); margin:0px;border-left: 0px;border-right: 0px;border-bottom: 0px solid red;">
+                    <ul class="layui-tab-title">
+                        @*<li class="layui-this">网站设置</li>*@
+                    </ul>
+                    <div class="layui-tab-content"  style="padding:0px; border:0px solid red;" >
+                        @*<div class="layui-tab-item layui-show">
+                            1. 我个人比较喜欢卡片风格的，所以你发现又是以卡片的风格举例
+                            2. 删除功能适用于所有风格
+                        </div>*@
+                        
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+    </div>
+    <div style="display: none;" id="rocket-to-top">
+        <div style="opacity:0;display: block;" class="level-2"></div>
+        <div class="level-3"></div>
+    </div>
+    <!--foot start-->
+    <!--foot end-->
+
+</body>
+</html>

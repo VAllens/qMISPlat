@@ -1,0 +1,95 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>组织机构选择</title>
+    <meta charset="utf-8" />
+    <base target="_self" />
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">
+    <!-- kendo ui-->
+    <link rel="stylesheet" href="../../Style/Kendo/kendo.common.min.css" />
+    <link rel="stylesheet" href="../../Style/Kendo/kendo.bootstrap.min.css" />
+    <script src="../../Plat/Common/Kendo/js/kendo.core.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.data.odata.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.data.xml.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.data.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.userevents.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.draganddrop.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.treeview.draganddrop.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.button.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.treeview.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.resizable.min.js"></script>
+    <script src="../../Plat/Common/Kendo/js/kendo.splitter.min.js"></script> 
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" /> 
+    <link href="../../Style/@ViewBag.CPSkin/Organ/OrganSel.css" type="text/css" rel="stylesheet" /> 
+    <script src="../../Plat/Organ/OrganSel.js?Id=9"></script> 
+</head>
+<body >
+    <script id="treeview-template" type="text/kendo-ui-template">
+        <span ondblclick="CPTreeNodedblClick('#: item.Id #')"><i class="icon iconfont icon-dept1" style="font-size:14px;vertical-align: middle;padding-right:4px;"></i>#: item.DepName #</span>
+    </script>
+
+    <div id="vertical" style="height:454px; overflow:auto;">
+        <div id="top-pane" >
+            <div id="horizontal" style="height: 100%; width: 100%;">
+                <div id="left-pane">
+                    <div id="CPOrganSelTree">
+                    </div>
+                </div>
+                <div id="center-pane">
+                    <div id="leftList" style="float:left;">
+                        <div style="margin:5px;">
+                            <select id="LeftUserList" multiple="multiple" style="width:190px;height:340px; border-color:#f5f5f5;" ondblclick="LeftUserListdblclick()"></select>
+                        </div>
+                        <div style="margin:5px;border:0px solid red;">
+                            <input type="text" id="CPOrganSelSearchTxt" onfocus="this.select()" style="width:180px;" onkeydown="SearchTextOnClick(this);" placeholder="关键字搜索,回车查询" class="SearchTextBoxCss">
+                            <button type="button" id="CPBtnSearch" class="SearchBtnCss" style="display:none;">查询</button>
+
+                        </div>
+                    </div>
+                    <div id="centerButton" style="float:left;width:40px; text-align:center; margin-top:100px;border:0px solid red;">
+                        <div><button type="button" id="CPBtnSel" class="SearchBtnCss" title="添加" style="width:40px;">></button></div>
+                        <div style="margin-top:6px;">
+                            <button type="button" id="CPBtnDel" class="SearchBtnCss" title="删除" style="width:40px;"><</button>
+                        </div>
+                        <div style="margin-top:6px;">
+                            <button type="button" id="CPBtnAllSel" class="SearchBtnCss" title="全添加" style="width:40px;display:none;">>></button>
+                        </div>
+                        <div style="margin-top:6px;">
+                            <button type="button" id="CPBtnAllDel" class="SearchBtnCss" title="全删除" style="width:40px;display:none;"><<</button>
+                        </div>
+                    </div>
+                    <div id="rightList" style="float:left;margin:5px;border:0px solid red;">                    
+                    <select id="RightUserList" multiple="multiple" style="width:180px;height:340px; border-color:#f5f5f5;" ondblclick="RightUserListdblclick()"></select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-pane" style=" overflow:hidden;">
+            <div class="pane-content" style="text-align:center; margin-top:10px;">
+                <div style="float:left;width:120px;"><button type="button" id="CPBtnAllUser" class="SearchBtnCss" style="width:110px;"><i class="icon iconfont icon-pengyou" style="font-size:24px; padding-right:4px; vertical-align:middle;"></i>全部用户</button></div>
+                <div style="float:left;width:620px; text-align:right;">
+                <button type="button" id="CPBtnOK" class="SearchBtnCss" title="确定"><i class="icon iconfont icon-right" style="font-size:24px; vertical-align:middle;"></i>确定</button>
+                <button type="button" id="CPBtnCancel" class="SearchBtnCss" title="取消"><i class="icon iconfont icon-guanbi" style="font-size:24px; padding-right:4px; vertical-align:middle;"></i>取消</button>
+                </div>
+                
+              
+            </div>
+        </div>
+    </div>
+           
+</body>
+</html>

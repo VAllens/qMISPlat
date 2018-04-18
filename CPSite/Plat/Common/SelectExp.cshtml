@@ -1,0 +1,157 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>表达式选择</title>
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <!-- Bootstrap styles --> 
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">
+
+    <link rel="stylesheet" href="../../Style/Kendo/kendo.common.min.css" />
+    <link rel="stylesheet" href="../../Style/Kendo/kendo.bootstrap.min.css" />
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.core.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.data.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.userevents.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.draganddrop.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.treeview.draganddrop.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.treeview.min.js"></script>
+
+    <!--<script type="text/javascript" src="../Common/Kendo/JS/kendo.web.min.js"></script>-->
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/cultures/kendo.culture.zh-CN.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/messages/kendo.messages.zh-CN.min.js"></script>
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="example">
+        <div class="demo-section k-content">
+            <ul id="treeview">
+                <li data-expanded="true">
+                    <span class="k-sprite folder"></span>
+                   通用表达式
+                    <ul>
+@foreach (var p in ViewBag.ExpCol)
+{
+                        <li data-expanded="true">
+                            <span class="k-sprite folder"></span>@p.Name
+                            <ul>
+@foreach (var q in p.MethodCol)
+{
+                                <li ondblclick="SelExt('@p.ExpKey','@q.MethodName','@q.ParaNames','@q.ParaNameTitles')"><span class="k-sprite image"></span>@q.Name</li> 
+}
+                            </ul>
+                        </li>
+}
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+        <div id="divInputPara" style=" text-align:center; display:none; position:absolute; left:50%;top:50%;margin:-100px 0 0 -140px ">
+
+        </div>
+        </body>
+<style>
+    #treeview .k-sprite {
+        background-image: url("../content/web/treeview/coloricons-sprite.png");
+    }
+
+    .rootfolder {
+        background-position: 0 0;
+    }
+
+    .folder {
+        background-position: 0 -16px;
+    }
+
+    .pdf {
+        background-position: 0 -32px;
+    }
+
+    .html {
+        background-position: 0 -48px;
+    }
+
+    .image {
+        background-position: 0 -64px;
+    }
+</style> 
+<script type="text/javascript">
+    $(function () {
+        $("#treeview").kendoTreeView();
+
+    });
+    function SetSelExtReturn(paraNames)
+    {
+        var s = "${" + CurExpKey + "." + CurMethodName + "(";//'" + paraNames + "')}";
+        var sArray = paraNames.split(',');
+        $.each(sArray, function (nIndex, nObj) {
+            if (nIndex == 0) {
+                s += "'" + $("#txt_" + nObj).val() + "'";
+            }
+            else {
+
+                s += ",'" + $("#txt_" + nObj).val() + "'";
+            }
+        });
+        s += ")}";
+        window.opener.CPShowModalDialogReturnArgs = s;
+        window.opener.SelectExpression_SetReturn();
+        window.close();
+    }
+    function InputPara(paraNames,paraNameTitles)
+    {
+        var sArray = paraNames.split(',');
+        var titleArray = paraNameTitles.split(',');
+        var sHtml = "<table>";
+        $.each(sArray, function (nIndex, nObj) {
+            if (titleArray[nIndex] != "") {
+                sHtml += "<tr><td>" + titleArray[nIndex] + ":</td>";
+            }
+            else {
+                sHtml += "<tr><td>" + nObj + ":</td>";
+            }
+            sHtml += "<td><input type='text' id='txt_" + nObj + "' /></td > ";
+            sHtml += "</tr>";
+        });
+        sHtml += "<tr><td colspan='2' style='height:10px;'></td></tr>";
+        sHtml += "<tr><td colspan='2'><input type='button'  style='width:80px;height:30px;' value='确定' onclick=\"SetSelExtReturn('" + paraNames + "')\"></td></tr>";
+        sHtml += "</table>";
+        $("#divInputPara").html(sHtml);
+        $("#divInputPara").show();
+        $("#example").hide();
+    }
+    var CurExpKey;
+    var CurMethodName;
+    function SelExt(ExpKey, MethodName, paraNames, paraNameTitles)
+    {
+        //${CPContext.QueryString('SysId')}
+        var s = "";
+        if (paraNames == "") {
+            s = "${" + ExpKey + "." + MethodName + "()}";
+            window.opener.CPShowModalDialogReturnArgs = s;
+            window.opener.SelectExpression_SetReturn();
+            window.close();
+        }
+        else {
+            CurExpKey = ExpKey;
+            CurMethodName = MethodName;
+          //  s = "${" + ExpKey + "." + MethodName + "('" + paraNames + "')}";
+            InputPara(paraNames, paraNameTitles);
+        }
+       
+    }
+</script>
+</html>

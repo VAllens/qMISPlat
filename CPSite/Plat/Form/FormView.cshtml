@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html ng-app="CPFormEngineApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>表单</title>
+    <meta charset="utf-8" />
+    <base target="_self" />
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <!-- 下面两句代码是做手机适配用的 ， 加上之后手机网页就会自动适配-->
+    <!--解决安卓手机点击文本框，会自动放大网页的问题-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="../../Plat/Common/JS/angular.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+    <link href="../../Plat/Common/jquery.contextmenu/jquery.contextMenu.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="../../Plat/Common/jquery.contextmenu/jquery.ui.position.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/jquery.contextmenu/jquery.contextMenu.js"></script>
+
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">
+    <!--layer ui-->
+    <script src="../../Plat/Common/layui/lay/modules/layer.js"></script>
+    <link rel="stylesheet" href="../../Plat/Common/layui/css/layui.css" media="all">
+    <script src="../../Plat/Common/layui/layui.js" charset="utf-8"></script>
+    
+    <!--art-template模板解析引擎-->
+    <script type="text/javascript" src="../../Plat/Common/art-template/lib/template-web.js"></script>
+    <script type="text/javascript" src="../../Plat/Form/@ViewBag.FormJS"></script>
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+    <link href="../../Style/@ViewBag.CPSkin/Form/FormStyle.css" type="text/css" rel="stylesheet" />
+</head>
+<body ng-controller="MyCtrl"> 
+    <div id="CPFormContainer" class="FormMaxContainerCss" >
+        <div ionicstringtohtml id="CPFormMain" inputstring="FormObj.FormHtml" class="FormMainContainerCss"></div>
+        <div id="CPFormButton" class="FormButtonContainer" style="display:none;">
+            @*<button ng-click="SaveFormData()" class="layui-btn layui-btn-normal">保存表单</button>*@
+        </div>
+    </div>
+    <div id="divCPFormJSContainer" style="display:none;"></div>
+    <div id="divLoading" style="position:absolute; left:50%;top:50%;margin:-100px 0 0 -80px "><img src="../../Style/CommonIcon/loading.gif" /></div>
+</body>
+</html>

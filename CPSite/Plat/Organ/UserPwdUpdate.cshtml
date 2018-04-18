@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>密码修改</title>
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script> 
+    <link href="../../Style/@ViewBag.CPSkin/Portal/Login.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        var DefaultUrl = "@ViewBag.DefaultUrl";
+    </script>
+</head>
+<body  style="background:none;background-color:#e2e2e2;">
+    <div class="login" style="margin-top:50px;min-height:unset;">
+        <input id="password0" placeholder="原密码" required="" type="password" >
+        <hr class="hr15">
+        <input id="password1" placeholder="新密码" required="" type="password">
+        <hr class="hr15">
+        <input id="password2" placeholder="重复密码" required="" type="password">
+        <hr class="hr15">
+        <input value="保存修改" style="width:100%;" type="button" onclick="UpdatePwdSave()" />
+    </div> 
+</body>
+<script type="text/javascript">
+    function UpdatePwdSave()
+    {
+        if ($("#password1").val() != $("#password2").val())
+        {
+            alert("两次密码输入不一样，请重新输入！");
+            return false;
+        }
+        var url = CPWebRootPath + "/api/COOrganEngine/UpdateUserPwd?OldPwd=" + $("#password0").val() + "&NewPwd=" + $("#password1").val();
+        $.getJSON(url, function (data) {
+            if (data.Result == false) {
+                alert(data.ErrorMsg);
+                return false;
+            }
+            alert("修改成功！");
+
+        });
+    //再加其它参数
+    }
+</script>
+</html>

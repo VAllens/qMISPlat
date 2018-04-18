@@ -1,0 +1,12 @@
+E:\MyCloud\Code\CPSite
+--output-path=obj\Debug\netcoreapp2.0\
+--application-name=CPFrameWork
+--content-root=E:\MyCloud\Code\CPSite
+--file=E:\MyCloud\Code\CPSite\Views\Home\About.cshtml
+--file=E:\MyCloud\Code\CPSite\Views\Home\Contact.cshtml
+--file=E:\MyCloud\Code\CPSite\Views\Home\Index.cshtml
+--file=E:\MyCloud\Code\CPSite\Views\Shared\Error.cshtml
+--file=E:\MyCloud\Code\CPSite\Views\Shared\_Layout.cshtml
+--file=E:\MyCloud\Code\CPSite\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=E:\MyCloud\Code\CPSite\Views\_ViewImports.cshtml
+--file=E:\MyCloud\Code\CPSite\Views\_ViewStart.cshtml

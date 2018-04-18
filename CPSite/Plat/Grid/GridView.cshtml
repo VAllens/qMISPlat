@@ -1,0 +1,78 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>列表</title>
+    <meta charset="utf-8" />
+    <base target="_self" />
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <!-- 下面两句代码是做手机适配用的 ， 加上之后手机网页就会自动适配-->
+    <!--解决安卓手机点击文本框，会自动放大网页的问题-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">
+
+    <link rel="stylesheet" href="../../Style/Kendo/kendo.common.min.css" />
+    <link rel="stylesheet" href="../../Style/Kendo/kendo.bootstrap.min.css" />
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/jszip.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.core.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.data.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.data.odata.min.js"></script>    
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.popup.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.userevents.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.fx.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.draganddrop.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.resizable.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.columnsorter.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.list.min.js"></script> 
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.editable.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.dropdownlist.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.window.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.filtermenu.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.columnmenu.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.groupable.min.js"></script>
+
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.pager.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.selectable.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.sortable.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.reorderable.min.js"></script> 
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.ooxml.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.excel.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.progressbar.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.button.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/kendo.grid.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/cultures/kendo.culture.zh-CN.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/Kendo/JS/messages/kendo.messages.zh-CN.min.js"></script>
+    <!--layer ui-->
+    <script src="../../Plat/Common/layui/lay/modules/layer.js"></script>
+    <link rel="stylesheet" href="../../Plat/Common/layui/css/layui.css" media="all">
+    <script src="../../Plat/Common/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../Plat/Grid/@ViewBag.GridJS"></script>
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+    <link href="../../Style/@ViewBag.CPSkin/Grid/GridStyle.css" type="text/css" rel="stylesheet" />
+</head>
+<body  >
+    <div id="CPGirdContainer"  >
+        <div id="CPGridSearch" style="display:none;">
+            <input type="text" id="CPGridSearchTxt" onfocus="this.select()" onkeydown="SearchTextOnClick(this);" placeholder=""   class="SearchTextBoxCss" >
+            <button type="button" id="CPBtnSearch" class="SearchBtnCss">查询</button>
+        </div>
+        <div id="CPGridButton"  style="display:none;"></div>
+        <div style="clear:both;"></div>
+        <div id="CPGirdDiv"   ></div>
+    </div>
+    <div id="divCPGridJSContainer" style="display:none;"></div>
+    <div id="divLoading" style="position:absolute; left:50%;top:50%;margin:-100px 0 0 -80px "><img src="../../Style/CommonIcon/loading.gif" /></div>
+ 
+</body>
+</html>

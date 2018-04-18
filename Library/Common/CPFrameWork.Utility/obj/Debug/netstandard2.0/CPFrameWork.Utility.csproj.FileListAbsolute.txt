@@ -1,0 +1,9 @@
+E:\MyCloud\Code\Library\Common\CPFrameWork.Utility\bin\Debug\netstandard2.0\CPFrameWork.Utility.deps.json
+E:\MyCloud\Code\Library\Common\CPFrameWork.Utility\bin\Debug\netstandard2.0\CPFrameWork.Utility.dll
+E:\MyCloud\Code\Library\Common\CPFrameWork.Utility\bin\Debug\netstandard2.0\CPFrameWork.Utility.pdb
+E:\MyCloud\Code\Library\Common\CPFrameWork.Utility\obj\Debug\netstandard2.0\CPFrameWork.Utility.csproj.CoreCompileInputs.cache
+E:\MyCloud\Code\Library\Common\CPFrameWork.Utility\obj\Debug\netstandard2.0\CPFrameWork.Utility.AssemblyInfoInputs.cache
+E:\MyCloud\Code\Library\Common\CPFrameWork.Utility\obj\Debug\netstandard2.0\CPFrameWork.Utility.AssemblyInfo.cs
+E:\MyCloud\Code\Library\Common\CPFrameWork.Utility\obj\Debug\netstandard2.0\CPFrameWork.Utility.dll
+E:\MyCloud\Code\Library\Common\CPFrameWork.Utility\obj\Debug\netstandard2.0\CPFrameWork.Utility.pdb
+E:\MyCloud\Code\Library\Common\CPFrameWork.Utility\obj\Debug\netstandard2.0\CPFrameWork.Utility.csprojResolveAssemblyReference.cache

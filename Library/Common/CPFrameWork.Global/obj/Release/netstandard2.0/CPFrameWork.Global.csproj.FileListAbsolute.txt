@@ -1,0 +1,13 @@
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\bin\Release\netstandard2.0\CPFrameWork.Global.deps.json
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\bin\Release\netstandard2.0\CPFrameWork.Global.dll
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\bin\Release\netstandard2.0\CPFrameWork.Global.pdb
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\bin\Release\netstandard2.0\CPFrameWork.Utility.dll
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\bin\Release\netstandard2.0\NVelocity.dll
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\bin\Release\netstandard2.0\CPFrameWork.Utility.pdb
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\bin\Release\netstandard2.0\NVelocity.pdb
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\obj\Release\netstandard2.0\CPFrameWork.Global.csprojResolveAssemblyReference.cache
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\obj\Release\netstandard2.0\CPFrameWork.Global.csproj.CoreCompileInputs.cache
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\obj\Release\netstandard2.0\CPFrameWork.Global.AssemblyInfoInputs.cache
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\obj\Release\netstandard2.0\CPFrameWork.Global.AssemblyInfo.cs
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\obj\Release\netstandard2.0\CPFrameWork.Global.dll
+E:\MyCloud\Code\Library\Common\CPFrameWork.Global\obj\Release\netstandard2.0\CPFrameWork.Global.pdb

@@ -1,0 +1,160 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>业务配置开发平台帮助文档</title>
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+
+    <link rel="stylesheet" href="../../Plat/Common/layui/css/layui.css" media="all">
+    <script src="../../Plat/Common/layui/lay/modules/layer.js"></script>
+    <script src="../../Plat/Common/layui/layui.js" charset="utf-8"></script> 
+
+</head>
+<body style="overflow:hidden;">
+    <div style="text-align:center;  margin-top:6px;">技术支持：QQ()、联系电话()</div>
+    <div class="layui-tab layui-tab-card">
+        <ul class="layui-tab-title">
+            <li class="layui-this">全局帮助</li>
+            <li>列表工具</li>
+            <li>表单工具</li>
+            <li>树工具</li>
+            <li>二次开发示例代码下载</li>
+        </ul>
+        <div class="layui-tab-content" style="overflow:auto;">
+            <div class="layui-tab-item layui-show">
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>获取用户登录Session相关表达式</legend>
+                </fieldset>
+                <blockquote class="layui-elem-quote layui-quote-nm">
+                    <div>1、获取用户ID：${CPUser.UserId()}</div>
+                    <div>2、获取用户登录Key：${CPUser.UserIden()}</div>
+                    <div>3、获取用户姓名：${CPUser.UserName()}</div>
+                    <div>4、获取用户登录名：${CPUser.UserLoginName()}</div>
+                    <div>5、获取用户登录照片地址：${CPUser.UserPhotoPath()}</div>
+                    <div>6、获取用户所属角色ID，多个用,分隔：${CPUser.UserRoleIds()}</div>
+                    <div>7、获取当前用户所属角色姓名，多个用，分隔：${CPUser.UserRoleNames()}</div>
+                    <div>8、获取当前用户所属部门ID，多个用，分隔：${CPUser.DepIds()}</div>
+                    <div>9、获取当前用户所属部门姓名，多个用，分隔：${CPUser.DepNames()}</div>
+                    <div>10、获取获取当前用户拥有管理员权限的子系统ID，多个用，分隔：${CPUser.UserAdminSysIds()}</div> 
+                    <br>——二次开发C#代码调用示例：首先引用CPFrameWork.Global.dll，调用方法：CPFrameWork.Global.CPExpressionHelper.Instance.RunCompile("${CPUser.UserId()}")
+                </blockquote>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>平台界面提供的通用JS变量或方法</legend>
+                </fieldset>
+                <blockquote class="layui-elem-quote layui-quote-nm">
+                    <div>1、JS获取queryString某个参数值方法：$.CPGetQuery("key")</div>
+                    <div>2、JS去除空格方法：CPTrim("待去空格字符串")</div>
+                    <div>3、打开本页面弹出层方法：OpenNewModel(页面地址, 弹出层标题, 弹出层宽度, 弹出层高度)</div>
+                    <div>4、在最外层框架中打开弹出层方法：top.OpenNewModel(页面地址, 弹出层标题, 弹出层宽度, 弹出层高度)</div>
+                    <div>5、关闭弹出层方法：CloseNewModel()</div>
+                    <div>6、获取网站根路径变量名：CPWebRootPath</div>
+                    <div>7、获取当前登录用户ID的变量名：CPCurUserId</div>
+                    <div>8、获取当前登录用户Key的变量名：CPCurUserIden</div>
+                    <br>
+                </blockquote>
+            </div>
+            <div class="layui-tab-item">
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>列表工具提供的内置JS方法或变量</legend>
+                </fieldset>
+                <blockquote class="layui-elem-quote layui-quote-nm">
+                    <div>1、JS获取列表全部配置信息变量：CPGridGlobal_GridObj</div>
+                    <div>2、刷新列表方法：CPGridRefresh()</div>
+                    <div>3、获取checkbox列选中值方法：CPGridGetSelChkData()</div>
+                    <div>4、获取radio列选中值方法：CPGridGetRadioSelData()</div>
+                    <div>5、内置修改列表数据方法：CPGridUpdateData()</div>
+                    <div>6、删除列表选中行数据方法：CPGridDeleteData()</div>
+                    <div>7、列表编辑控件配置选择表达式方法：SelectExpression(thisObj, nType)，参数说明：thisObj指控件对象，一般配置this即可；nType指选择表达式类型，存在如下取值：0通用表达式  1列表  2表单   3树 4流程</div>
+                    
+                    <br> 
+                </blockquote>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>列表工具服务器端C#扩展开发接口</legend>
+                </fieldset>
+                <blockquote class="layui-elem-quote layui-quote-nm">
+                    <div>1、列表数据读取前扩展开发接口：在此接口里，你可以动态更改列表获取数据的SQL语句。首先引用CPFrameWork.UIInterface.dll，继承接口CPFrameWork.UIInterface.Grid.CPGridInterface，实现方法BeforeReadDataFromDb，之后在列表基本信息配置，【列表加载前扩展类】里将你自定义的类信息配置即可。配置格式为：命名空间.自定义类名,类所在dll的名称。详情参考二次开发示例</div>
+                    <div>2、列表数据读取后扩展开发接口：在列表从数据库里获取完数据后，执行此扩展接口，在此接口里，你可以修改需要渲染到客户端的列表数据。首先引用CPFrameWork.UIInterface.dll，继承接口CPFrameWork.UIInterface.Grid.CPGridInterface，实现方法AfterReadDataFromDb，之后在列表基本信息配置，【列表加载前扩展类】里将你自定义的类信息配置即可。配置格式为：命名空间.自定义类名,类所在dll的名称。详情参考二次开发示例</div>
+                   
+                    <br>
+                </blockquote>
+            </div>
+            <div class="layui-tab-item">
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>表单工具提供的内置JS方法或变量</legend>
+                </fieldset>
+                <blockquote class="layui-elem-quote layui-quote-nm">
+                    <div>1、JS获取列表工具配置对象：CPFormGlobal_FormObj</div>
+                    <div>2、获取AngularJS里scope对象变量：CPFormGlobal_Scope</div>
+                    <div>3、保存表单数据方法：CPFormSaveFormData()</div>
+                    <div>4、控件配置选择表达式方法：SelectExpression(thisObj, nType)，参数说明：thisObj指控件对象，一般配置this即可；nType指选择表达式类型，存在如下取值：0通用表达式  1列表  2表单   3树</div>
+                    <div>5、选择图标方法：SelectFontIcon(thisObj)，参数说明：thisObj指控件对象，一般配置this即可；</div>
+                    <div>6、选择用户方法：CPFormUserSelectMethod(controlId, organIsCanMultiSel)，参数说明：controlId指dom对象ID，organIsCanMultiSel选择用户是单选还是多选，取值：true多选,false单选</div>
+                    <div>7、选择部门方法：CPFormDepSelectMethod(controlId, organIsCanMultiSel)，参数说明：controlId指dom对象ID，organIsCanMultiSel选择部门是单选还是多选，取值：true多选,false单选</div>
+                    <div>8、选择角色方法：CPFormRoleSelectMethod(controlId, organIsCanMultiSel)，参数说明：controlId指dom对象ID，organIsCanMultiSel选择角色是单选还是多选，取值：true多选,false单选</div>
+                    <div>9、获取某个字段的值方法：CPFormGlobal_Scope.GetFieldValue(tableName, fieldName, CPFormDataIndex)，参数说明：tableName字段所在表名 ,fieldName字段名,CPFormDataIndex表示当前操作第几行表数据，一般用于子表，主表字段固定取值0，子表字段，可取值JS变量CPFormGlobal_CurControlDataRowIndex)</div>
+                    <div>10、获取某个字段的值方法：CPFormGlobal_Scope.SetFieldValue(tableName, fieldName, CPFormDataIndex,sValue)，参数说明：tableName字段所在表名 ,fieldName字段名,CPFormDataIndex表示当前操作第几行表数据，一般用于子表，主表字段固定取值0，子表字段，可取值JS变量CPFormGlobal_CurControlDataRowIndex)，sValue字段值</div>
+                    <br>
+                </blockquote>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>表单工具服务器端C#扩展开发接口</legend>
+                </fieldset>
+                <blockquote class="layui-elem-quote layui-quote-nm">
+                    <div>1、表单加载前扩展接口：在此接口里，你可以动态更改渲染到表单上的数据，首先引用CPFrameWork.UIInterface.dll，继承接口CPFrameWork.UIInterface.Form.ICPFormBeforeLoad，实现方法BeforeLoad，之后在表单应用场景配置里，【表单加载扩展事件类】里将你自定义的类信息配置即可。配置格式为：命名空间.自定义类名,类所在dll的名称。详情参考二次开发示例</div>
+                    <div>2、表单数据保存后的扩展接口：在此接口里，你可以在表单内置保存方法保存成功后，进一步对数据进行操作，首先引用CPFrameWork.UIInterface.dll，继承接口CPFrameWork.UIInterface.Form.ICPFormAfterSave，实现方法AfterSave，之后在表单应用场景配置里，【表单保存扩展事件类】里将你自定义的类信息配置即可。配置格式为：命名空间.自定义类名,类所在dll的名称。详情参考二次开发示例</div>
+
+                    <br>
+                </blockquote>
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>表单在流程中使用注意事项</legend>
+                </fieldset>
+            </div>
+            <div class="layui-tab-item">
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>树工具提供的内置JS方法或变量</legend>
+                </fieldset>
+                <blockquote class="layui-elem-quote layui-quote-nm">
+                    <div>1、JS获取树全部配置信息变量：CPTreeGlobal_TreeObj</div>
+                    <div>2、刷新树方法(仅支持数据为逐级加载模式)：CPTreeRefresh()</div>
+                    <div>3、获取树对象实例方法：CPTreeGetTreeInstance()</div>
+                    <div>4、获取树checkbox选中值方法：CPTreeGetSelNodeData()</div>
+                    <div>5、设置树右侧框架页地址方法：CPTreeSetFrameUrl(url)，参数说明：url为页面地址</div>
+                    <div>6、获取当前树选中节点变量：CPTreeGlobal_CurSelNode,当值为null时，表示没有选中节点</div>
+                    <div>7、获取当前树选中节点对应数据变量：CPTreeGlobal_CurSelNodeData,当值为null时，表示没有选中节点</div>
+                    <div>8、选择表达式方法：SelectExpression(thisObj, nType)，参数说明：thisObj指控件对象，一般配置this即可；nType指选择表达式类型，存在如下取值：0通用表达式  1列表  2表单   3树 4流程</div>
+
+                    <br>
+                </blockquote>
+            </div>
+            <div class="layui-tab-item">
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+                    <legend>示例代码下载</legend>
+                </fieldset>
+                <blockquote class="layui-elem-quote layui-quote-nm">
+                    <a href="">点击下载</a>
+                   
+                    <br>
+                </blockquote>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    layui.use('element', function () {
+    });
+    $(function () {
+        $(".layui-tab-content").height($(window).height() - 100);
+    });
+</script>
+</html>

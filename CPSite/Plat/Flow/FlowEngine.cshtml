@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>流程办理界面</title>
+    <meta charset="utf-8" />
+    <base target="_self" />
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <!-- 下面两句代码是做手机适配用的 ， 加上之后手机网页就会自动适配-->
+    <!--解决安卓手机点击文本框，会自动放大网页的问题-->
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+    <!--阿里图标-->
+    <link rel="stylesheet" href="../../Style/AibabaIcon/iconfont.css">
+
+    <!--layer ui-->
+    <script src="../../Plat/Common/layui/lay/modules/layer.js"></script>
+    <link rel="stylesheet" href="../../Plat/Common/layui/css/layui.css" media="all">
+    <script src="../../Plat/Common/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../Plat/Flow/@ViewBag.FlowJS"></script>
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+    <link href="../../Style/@ViewBag.CPSkin/Flow/FlowEngine.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <div id="CPFlowContainer">
+        <div class="layui-row" id="CPFlowHeaderContainer" style="display:none;">
+            <div class="layui-col-md3" id="CPFlowTitleContainer" >
+                <i class="icon iconfont icon-caidan1" style="font-size:22px;color:red; vertical-align: middle;display:none;padding-right:4px;" id="spanInsTitleIcon"></i><span id="spanInsTitle"></span>
+            </div>
+            <div class="layui-col-md9" id="CPFlowButtonContainer">
+                <button type="button" id="btnSaveForm" class="FlowButtonCss" style="display:none;"><i class="icon iconfont icon-fankui" style="font-size:22px"></i>保存表单</button>
+                <button type="button" id="btnSubmitFlow" class="FlowButtonCss" style="display:none;"><i class="icon iconfont icon-xuanze"></i>提交</button>
+                <button type="button" id="btnFallbackFlow" class="FlowButtonCss" style="display:none;"><i class="icon iconfont icon-guanbi1"></i>驳回</button>
+                <button type="button" id="btnTakeBackFlow" class="FlowButtonCss" style="display:none;"><i class="icon iconfont icon-xuanze"></i>取回</button>
+                <button type="button" id="btnDelFlow" class="FlowButtonCss" style="display:none;"><i class="icon iconfont icon-guanbi1"></i>删除(未开发)</button>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-col-xs12" style="margin:0px; padding:0px;">
+                <div class="layui-tab layui-tab-brief" lay-filter="cpFlowTabBrief">
+                    <ul class="layui-tab-title">
+                        @*<li class="layui-this">表单</li>
+                        <li>流程</li>*@
+                    </ul>
+                    <div class="layui-tab-content"  style="margin:0px;padding:0px;">
+                        <iframe scrolling="auto" id="CPFlowFormFrame" class="" frameborder="0" style="height:400px;  border:0px solid red" src=""></iframe>
+                        <iframe scrolling="auto" id="CPFlowLogFrame" class="" frameborder="0" style="height:400px;  border:0px solid red;display:none;" src=""></iframe>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

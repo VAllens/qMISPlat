@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>导入配置</title>
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+    <link href="../../Style/@ViewBag.CPSkin/Common.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript">
+        var DefaultUrl = "@ViewBag.DefaultUrl";
+    </script>
+</head>
+<body style="background:none;background-color:white; text-align:center; ">
+    <form enctype="multipart/form-data" id="form1">
+        <div style="margin-top:30px;">
+            <input type="file" id="file0" name="file0" placeholder="请选择配置文件" />
+            <input value="保存" class="BlueButton" style="width:100px;" type="button" onclick="Save()" />
+        </div>
+    </form>
+</body>
+<script type="text/javascript">
+    function Save()
+    {
+        if ($("#file0").val() =="")
+        {
+            alert("请选择配置文件！");
+            return false;
+        }
+        $(".BlueButton").attr('disabled', "true");
+        var formData = new FormData();
+        formData.append('file', $('#file0')[0].files[0]);
+        var TargetSysId = $.CPGetQuery("TargetSysId");
+        var IsCreateNew = $.CPGetQuery("IsCreateNew");
+        var url = CPWebRootPath + "/api/AutoEngine/SynAutoConfig?TargetSysId=" + TargetSysId + "&IsCreateNew=" + IsCreateNew + "&CurUserId=" + CPCurUserId + "&CurUserIden=" + CPCurUserIden;
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                if (data.Result == false) {
+                    alert(data.ErrorMsg);
+                    return false;
+                }
+                alert("保存成功！");
+                $('.BlueButton').removeAttr("disabled"); 
+                parent.CPGridRefresh();
+                parent.CloseNewModel();
+            }
+        });
+    }
+</script>
+</html>

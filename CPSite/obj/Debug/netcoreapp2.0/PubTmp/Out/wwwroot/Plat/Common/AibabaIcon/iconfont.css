@@ -1,0 +1,39 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1498867827577'); /* IE9*/
+  src: url('iconfont.eot?t=1498867827577#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1498867827577') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1498867827577') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1498867827577#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-accessory:before { content: "\e6dd"; }
+
+.icon-activity:before { content: "\e6de"; }
+
+.icon-activity_fill:before { content: "\e6df"; }
+
+.icon-add:before { content: "\e6e0"; }
+
+.icon-addition_fill:before { content: "\e6e1"; }
+
+.icon-addition:before { content: "\e6e2"; }
+
+.icon-addpeople_fill:before { content: "\e6e3"; }
+
+.icon-addpeople:before { content: "\e6e4"; }
+
+.icon-addressbook_fill:before { content: "\e6e5"; }
+
+.icon-addressbook:before { content: "\e6e6"; }
+
+.icon-close:before { content: "\e6e9"; }
+

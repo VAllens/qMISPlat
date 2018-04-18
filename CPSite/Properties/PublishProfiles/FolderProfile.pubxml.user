@@ -1,0 +1,2524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+此文件由 Web 项目的发布/打包过程使用。可以通过编辑此 MSBuild 文件
+自定义此过程的行为。为了解与此相关的更多内容，请访问 https://go.microsoft.com/fwlink/?LinkID=208121。 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>E:\MyCloud\Code\PublishOutput</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>09/03/2017 17:33:58</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>09/10/2017 08:24:16</publishTime>
+    </File>
+    <File Include="AutoMapper.Data.dll">
+      <publishTime>08/19/2017 19:37:06</publishTime>
+    </File>
+    <File Include="AutoMapper.dll">
+      <publishTime>06/26/2017 20:07:14</publishTime>
+    </File>
+    <File Include="bower.json">
+      <publishTime>09/06/2017 21:43:34</publishTime>
+    </File>
+    <File Include="bundleconfig.json">
+      <publishTime>09/03/2017 17:33:58</publishTime>
+    </File>
+    <File Include="CacheManager.Core.dll">
+      <publishTime>07/02/2017 04:06:34</publishTime>
+    </File>
+    <File Include="CacheManager.Microsoft.Extensions.Caching.Memory.dll">
+      <publishTime>07/02/2017 04:06:40</publishTime>
+    </File>
+    <File Include="CPFrameWork.deps.json">
+      <publishTime>09/18/2017 17:09:33</publishTime>
+    </File>
+    <File Include="CPFrameWork.dll">
+      <publishTime>09/18/2017 17:09:21</publishTime>
+    </File>
+    <File Include="CPFrameWork.Global.dll">
+      <publishTime>09/18/2017 17:02:52</publishTime>
+    </File>
+    <File Include="CPFrameWork.Global.pdb">
+      <publishTime>09/18/2017 17:02:52</publishTime>
+    </File>
+    <File Include="CPFrameWork.Organ.dll">
+      <publishTime>09/18/2017 17:02:54</publishTime>
+    </File>
+    <File Include="CPFrameWork.Organ.pdb">
+      <publishTime>09/18/2017 17:02:54</publishTime>
+    </File>
+    <File Include="CPFrameWork.pdb">
+      <publishTime>09/18/2017 17:09:21</publishTime>
+    </File>
+    <File Include="CPFrameWork.PrecompiledViews.dll">
+      <publishTime>09/18/2017 17:09:30</publishTime>
+    </File>
+    <File Include="CPFrameWork.PrecompiledViews.pdb">
+      <publishTime>09/18/2017 17:09:30</publishTime>
+    </File>
+    <File Include="CPFrameWork.runtimeconfig.json">
+      <publishTime>09/18/2017 17:09:33</publishTime>
+    </File>
+    <File Include="CPFrameWork.UIInterface.dll">
+      <publishTime>09/18/2017 17:02:55</publishTime>
+    </File>
+    <File Include="CPFrameWork.UIInterface.pdb">
+      <publishTime>09/18/2017 17:02:55</publishTime>
+    </File>
+    <File Include="CPFrameWork.Utility.dll">
+      <publishTime>09/18/2017 07:36:03</publishTime>
+    </File>
+    <File Include="CPFrameWork.Utility.pdb">
+      <publishTime>09/18/2017 07:36:03</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>08/28/2017 20:51:49</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>08/28/2017 20:51:48</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>08/28/2017 20:51:51</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.DynamicLinq.dll">
+      <publishTime>07/08/2017 16:32:14</publishTime>
+    </File>
+    <File Include="Microsoft.EntityFrameworkCore.Relational.Design.dll">
+      <publishTime>04/27/2017 18:53:26</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>08/28/2017 20:51:49</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>08/28/2017 20:51:49</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>08/28/2017 20:51:49</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>08/28/2017 20:51:49</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>08/28/2017 20:51:49</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>08/28/2017 20:51:49</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>08/28/2017 20:51:49</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>08/28/2017 20:52:02</publishTime>
+    </File>
+    <File Include="NVelocity.dll">
+      <publishTime>09/18/2017 07:36:05</publishTime>
+    </File>
+    <File Include="NVelocity.pdb">
+      <publishTime>09/18/2017 07:36:05</publishTime>
+    </File>
+    <File Include="Plat/Form/FormController.cs">
+      <publishTime>09/10/2017 07:20:50</publishTime>
+    </File>
+    <File Include="Plat/Form/FormView.cshtml">
+      <publishTime>09/09/2017 19:50:47</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>08/28/2017 20:51:48</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>08/28/2017 20:51:48</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>08/28/2017 20:51:48</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>08/28/2017 20:51:48</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>08/28/2017 20:51:48</publishTime>
+    </File>
+    <File Include="System.Linq.Dynamic.Core.dll">
+      <publishTime>07/08/2017 16:33:40</publishTime>
+    </File>
+    <File Include="Views/Home/About.cshtml">
+      <publishTime>09/03/2017 17:33:58</publishTime>
+    </File>
+    <File Include="Views/Home/Contact.cshtml">
+      <publishTime>09/03/2017 17:33:58</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>09/09/2017 16:31:36</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>09/03/2017 17:33:58</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>09/03/2017 17:33:58</publishTime>
+    </File>
+    <File Include="Views/Shared/_ValidationScriptsPartial.cshtml">
+      <publishTime>09/03/2017 17:33:58</publishTime>
+    </File>
+    <File Include="Views/_ViewImports.cshtml">
+      <publishTime>09/03/2017 17:33:58</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>09/03/2017 17:33:58</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>09/18/2017 17:09:33</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>09/03/2017 17:33:58</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/node-include/footer.art">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/node-include/header.art">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/node-include/index.art">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/node-include/index.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/node-layout/index.art">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/node-layout/index.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/node-layout/layout.art">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-art-syntax/basic.html">
+      <publishTime>07/13/2017 08:48:48</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-art-syntax/compile-error.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-art-syntax/compile.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-art-syntax/filter.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-art-syntax/include.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-art-syntax/no-escape.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-art-syntax/print.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-art-syntax/runtime-error.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-ie-compatible/es5-sham.min.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-ie-compatible/es5-shim.min.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-ie-compatible/index.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-ie-compatible/json3.min.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-native-syntax/basic.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-native-syntax/compile-error.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-native-syntax/compile.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-native-syntax/filter.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-native-syntax/include.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-native-syntax/no-escape.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-native-syntax/print.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-native-syntax/runtime-error.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-requirejs/index.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-requirejs/require.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-test-speed/index.html">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-test-speed/js/doT.min.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-test-speed/js/ejs.min.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-test-speed/js/handlebars.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-test-speed/js/highcharts.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-test-speed/js/jquery-1.7.2.min.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-test-speed/js/mustache.min.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-test-speed/js/pug.min.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/example/web-test-speed/js/swig.min.js">
+      <publishTime>07/13/2017 08:18:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/adapter/caches.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/adapter/extend.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/adapter/html-minifier.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/adapter/include.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/adapter/loader.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/adapter/onerror.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/adapter/resolve-filename.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/adapter/rule.art.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/adapter/rule.native.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/compiler.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/defaults.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/error.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/es-tokenizer.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/index.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/runtime.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/compile/tpl-tokenizer.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/defaults.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/extension.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/index.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/precompile.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/render.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/runtime.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/art-template/lib/template-web.js">
+      <publishTime>07/13/2017 08:18:27</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/css/bootstrap-theme.css">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/css/bootstrap-theme.css.map">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/css/bootstrap-theme.min.css.map">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/css/bootstrap.css">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/css/bootstrap.css.map">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/css/bootstrap.min.css">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/css/bootstrap.min.css.map">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/js/bootstrap.js">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/js/bootstrap.min.js">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/bootstrap/js/npm.js">
+      <publishTime>08/15/2017 08:21:00</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Common.css">
+      <publishTime>09/17/2017 07:40:50</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/dropzone/basic.css">
+      <publishTime>06/20/2017 13:42:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/dropzone/dropzone-amd-module.js">
+      <publishTime>06/20/2017 13:42:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/dropzone/dropzone.css">
+      <publishTime>06/20/2017 13:42:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/dropzone/dropzone.js">
+      <publishTime>06/20/2017 13:42:36</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/dropzone/min/basic.min.css">
+      <publishTime>06/20/2017 13:42:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/dropzone/min/dropzone-amd-module.min.js">
+      <publishTime>06/20/2017 13:42:40</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/dropzone/min/dropzone.min.css">
+      <publishTime>06/20/2017 13:42:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/dropzone/min/dropzone.min.js">
+      <publishTime>06/20/2017 13:42:42</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/jquery.contextmenu/font/context-menu-icons.eot">
+      <publishTime>07/01/2017 09:28:59</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/jquery.contextmenu/font/context-menu-icons.ttf">
+      <publishTime>07/01/2017 09:28:59</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/jquery.contextmenu/font/context-menu-icons.woff">
+      <publishTime>07/01/2017 09:28:59</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/jquery.contextmenu/font/context-menu-icons.woff2">
+      <publishTime>07/01/2017 09:28:59</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/jquery.contextmenu/jquery.contextMenu.css">
+      <publishTime>07/01/2017 09:28:59</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/jquery.contextmenu/jquery.contextMenu.js">
+      <publishTime>07/01/2017 10:59:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/jquery.contextmenu/jquery.contextMenu.min.css">
+      <publishTime>07/01/2017 09:28:59</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/jquery.contextmenu/jquery.contextMenu.min.css.map">
+      <publishTime>07/01/2017 09:28:59</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/jquery.contextmenu/jquery.ui.position.js">
+      <publishTime>07/01/2017 09:28:59</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/jquery.contextmenu/jquery.ui.position.min.js">
+      <publishTime>07/01/2017 09:28:59</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/JS/angular.min.js">
+      <publishTime>06/22/2017 18:34:21</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/JS/Common.js">
+      <publishTime>09/17/2017 07:31:19</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/JS/jquery-3.2.1.min.js">
+      <publishTime>06/22/2017 18:34:57</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/angular.min.js">
+      <publishTime>06/22/2017 18:30:02</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/cultures/kendo.culture.zh-CN.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/cultures/kendo.culture.zh-CN.min.js.map">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/jquery.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/jszip.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.all.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.angular.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.autocomplete.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.binder.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.button.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.calendar.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.color.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.colorpicker.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.columnmenu.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.columnsorter.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.combobox.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.core.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.data.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.data.odata.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.data.signalr.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.data.xml.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.barcode.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.chart.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.core.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.diagram.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.gauge.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.map.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.mobile.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.qrcode.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.sparkline.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.stock.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.themes.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dataviz.treemap.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.datepicker.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.datetimepicker.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dialog.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dom.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.draganddrop.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.drawing.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.dropdownlist.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.editable.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.editor.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.excel.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.filebrowser.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.filtercell.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.filtermenu.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.fx.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.gantt.list.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.gantt.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.gantt.timeline.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.grid.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.groupable.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.imagebrowser.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.list.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.listview.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.maskedtextbox.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mediaplayer.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.menu.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.actionsheet.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.application.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.button.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.buttongroup.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.collapsible.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.drawer.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.listview.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.loader.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.modalview.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.navbar.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.pane.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.popover.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.scroller.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.scrollview.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.shim.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.splitview.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.switch.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.tabstrip.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.mobile.view.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.multiselect.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.notification.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.numerictextbox.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.ooxml.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.pager.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.panelbar.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.pdf.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.pivot.configurator.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.pivot.fieldmenu.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.pivotgrid.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.popup.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.progressbar.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.reorderable.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.resizable.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.responsivepanel.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.router.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.scheduler.agendaview.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.scheduler.dayview.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.scheduler.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.scheduler.monthview.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.scheduler.recurrence.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.scheduler.timelineview.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.scheduler.view.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.selectable.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.slider.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.sortable.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.splitter.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.spreadsheet.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.tabstrip.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.timepicker.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.timezones.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.toolbar.min.js">
+      <publishTime>06/22/2017 18:30:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.tooltip.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.touch.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.treelist.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.treeview.draganddrop.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.treeview.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.upload.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.userevents.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.validator.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.view.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.virtuallist.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.web.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/kendo.window.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/messages/kendo.messages.zh-CN.min.js">
+      <publishTime>09/12/2017 20:41:11</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/messages/kendo.messages.zh-CN.min.js.map">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/Kendo/js/pako_deflate.min.js">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/2.0.0版.txt">
+      <publishTime>08/21/2017 08:32:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/css/layui.css">
+      <publishTime>08/21/2017 06:44:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/css/layui.mobile.css">
+      <publishTime>08/21/2017 06:44:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/css/modules/code.css">
+      <publishTime>08/21/2017 06:44:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/css/modules/laydate/default/laydate.css">
+      <publishTime>08/21/2017 06:44:07</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/css/modules/layer/default/icon-ext.png">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/css/modules/layer/default/icon.png">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/css/modules/layer/default/layer.css">
+      <publishTime>08/21/2017 06:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/css/modules/layer/default/loading-0.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/css/modules/layer/default/loading-1.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/css/modules/layer/default/loading-2.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/font/iconfont.eot">
+      <publishTime>08/21/2017 06:44:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/font/iconfont.svg">
+      <publishTime>08/21/2017 06:44:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/font/iconfont.ttf">
+      <publishTime>08/21/2017 06:44:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/font/iconfont.woff">
+      <publishTime>08/21/2017 06:44:07</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/0.gif">
+      <publishTime>08/21/2017 06:44:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/1.gif">
+      <publishTime>08/21/2017 06:44:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/10.gif">
+      <publishTime>08/21/2017 06:44:06</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/11.gif">
+      <publishTime>08/21/2017 06:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/12.gif">
+      <publishTime>08/21/2017 06:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/13.gif">
+      <publishTime>08/21/2017 06:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/14.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/15.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/16.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/17.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/18.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/19.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/2.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/20.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/21.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/22.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/23.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/24.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/25.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/26.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/27.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/28.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/29.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/3.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/30.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/31.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/32.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/33.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/34.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/35.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/36.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/37.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/38.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/39.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/4.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/40.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/41.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/42.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/43.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/44.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/45.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/46.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/47.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/48.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/49.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/5.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/50.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/51.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/52.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/53.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/54.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/55.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/56.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/57.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/58.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/59.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/6.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/60.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/61.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/62.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/63.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/64.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/65.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/66.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/67.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/68.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/69.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/7.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/70.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/71.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/8.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/images/face/9.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/carousel.js">
+      <publishTime>08/21/2017 06:44:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/code.js">
+      <publishTime>08/21/2017 06:44:05</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/element.js">
+      <publishTime>08/21/2017 06:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/flow.js">
+      <publishTime>08/21/2017 06:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/form.js">
+      <publishTime>08/21/2017 06:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/jquery.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/laydate.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/layedit.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/layer.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/laypage.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/laytpl.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/mobile.js">
+      <publishTime>08/21/2017 06:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/table.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/theme/default/icon-ext.png">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/theme/default/icon.png">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/theme/default/layer.css">
+      <publishTime>08/21/2017 06:44:08</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/theme/default/loading-0.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/theme/default/loading-1.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/theme/default/loading-2.gif">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/tree.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/upload.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/lay/modules/util.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/layui.all.js">
+      <publishTime>08/21/2017 06:44:09</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/layui/layui.js">
+      <publishTime>08/21/2017 06:44:04</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/anchor/anchor.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/attachment.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/attachment.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/attachment.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_default.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/alignicon.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/alignicon.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/bg.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/file-icons.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/file-icons.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/icons.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/icons.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/image.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/progress.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/success.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/attachment/images/success.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/background/background.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/background/background.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/background/background.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/background/images/bg.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/background/images/success.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/charts/chart.config.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/charts/charts.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/charts/charts.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/charts/charts.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/charts/images/charts0.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/charts/images/charts1.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/charts/images/charts2.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/charts/images/charts3.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/charts/images/charts4.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/charts/images/charts5.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/emotion.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/emotion.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/emotion.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/images/0.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/images/bface.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/images/cface.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/images/fface.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/images/jxface2.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/images/neweditor-tab-bg.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/images/tface.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/images/wface.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/emotion/images/yface.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/gmap/gmap.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/help/help.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/help/help.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/help/help.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/image.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/image.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/image.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/images/alignicon.jpg">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/images/bg.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/images/icons.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/images/icons.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/images/image.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/images/progress.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/images/success.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/image/images/success.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/insertframe/insertframe.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/internal.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/link/link.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/map/map.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/map/show.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/music/music.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/music/music.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/music/music.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/preview/preview.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/addimg.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/brush.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/delimg.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/delimgH.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/empty.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/emptyH.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/eraser.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/redo.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/redoH.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/scale.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/scaleH.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/size.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/undo.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/images/undoH.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/scrawl.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/scrawl.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/scrawl/scrawl.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/searchreplace/searchreplace.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/searchreplace/searchreplace.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/snapscreen/snapscreen.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/spechars/spechars.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/spechars/spechars.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/table/dragicon.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/table/edittable.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/table/edittable.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/table/edittable.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/table/edittd.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/table/edittip.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/template/config.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/template/images/bg.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/template/images/pre0.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/template/images/pre1.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/template/images/pre2.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/template/images/pre3.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/template/images/pre4.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/template/template.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/template/template.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/template/template.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/bg.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/center_focus.jpg">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/file-icons.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/file-icons.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/icons.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/icons.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/image.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/left_focus.jpg">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/none_focus.jpg">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/progress.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/right_focus.jpg">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/success.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/images/success.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/video.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/video.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/video/video.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/webapp/webapp.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/wordimage/fClipboard_ueditor.swf">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/wordimage/imageUploader.swf">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/wordimage/tangram.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/wordimage/wordimage.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/dialogs/wordimage/wordimage.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/index.html">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/en.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/addimage.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/alldeletebtnhoverskin.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/alldeletebtnupskin.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/background.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/button.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/copy.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/deletedisable.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/deleteenable.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/listbackground.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/localimage.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/music.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/rotateleftdisable.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/rotateleftenable.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/rotaterightdisable.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/rotaterightenable.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/en/images/upload.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/zh-cn/images/copy.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/zh-cn/images/localimage.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/zh-cn/images/music.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/zh-cn/images/upload.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/lang/zh-cn/zh-cn.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/App_Code/Config.cs">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/App_Code/ConfigHandler.cs">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/App_Code/CrawlerHandler.cs">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/App_Code/Handler.cs">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/App_Code/ListFileHandler.cs">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/App_Code/NotSupportedHandler.cs">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/App_Code/PathFormater.cs">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/App_Code/UploadHandler.cs">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>12/07/2015 19:04:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.AI.DependencyCollector.xml">
+      <publishTime>03/10/2016 14:26:18</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.AI.ServerTelemetryChannel.xml">
+      <publishTime>03/09/2016 12:00:14</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.AI.Web.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.AI.Web.xml">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.AI.WindowsServer.xml">
+      <publishTime>03/10/2016 14:26:26</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.ApplicationInsights.xml">
+      <publishTime>03/09/2016 11:57:34</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml">
+      <publishTime>06/15/2015 02:06:24</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.Practices.EnterpriseLibrary.Common.dll">
+      <publishTime>08/13/2015 15:44:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.Practices.EnterpriseLibrary.Common.xml">
+      <publishTime>08/13/2015 15:44:24</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.Practices.EnterpriseLibrary.Data.dll">
+      <publishTime>08/13/2015 15:44:35</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.Practices.EnterpriseLibrary.Data.xml">
+      <publishTime>08/13/2015 15:44:23</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.Practices.ObjectBuilder2.dll">
+      <publishTime>08/13/2015 15:44:25</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.Practices.Unity.dll">
+      <publishTime>05/21/2013 12:43:14</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.Practices.Unity.xml">
+      <publishTime>05/21/2013 12:43:14</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/25/2012 11:48:56</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Newtonsoft.Json.dll">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Newtonsoft.Json.pdb">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/Newtonsoft.Json.xml">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/csc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/18/2015 20:19:44</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/vbc.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/18/2015 20:19:46</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/config.json">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/controller.ashx">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/README.md">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/net/Web.config">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/css/ueditor.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/css/ueditor.min.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/dialogbase.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/anchor.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/arrow.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/arrow_down.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/arrow_up.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/button-bg.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/cancelbutton.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/charts.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/cursor_h.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/cursor_h.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/cursor_v.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/cursor_v.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/dialog-title-bg.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/filescan.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/highlighted.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/icons-all.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/icons.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/icons.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/loaderror.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/loading.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/lock.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/neweditor-tab-bg.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/pagebreak.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/scale.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/sortable.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/spacer.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/sparator_v.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/table-cell-align.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/tangram-colorpicker.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/toolbar_bg.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/unhighlighted.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/upload.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/videologo.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/word.gif">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/default/images/wordpaste.png">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/themes/iframe.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/codemirror/codemirror.css">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/codemirror/codemirror.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/adapters/mootools-adapter.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/adapters/prototype-adapter.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/adapters/standalone-framework.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/adapters/standalone-framework.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/highcharts-more.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/highcharts-more.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/highcharts.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/highcharts.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/annotations.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/annotations.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/canvas-tools.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/canvas-tools.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/data.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/data.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/drilldown.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/drilldown.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/exporting.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/exporting.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/funnel.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/funnel.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/heatmap.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/heatmap.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/map.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/map.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/no-data-to-display.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/modules/no-data-to-display.src.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/themes/dark-blue.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/themes/dark-green.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/themes/gray.js">
+      <publishTime>07/17/2017 08:41:37</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/themes/grid.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/highcharts/themes/skies.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/jquery-1.10.2.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/jquery-1.10.2.min.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/jquery-1.10.2.min.map">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/snapscreen/UEditorSnapscreen.exe">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/SyntaxHighlighter/shCore.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/video-js/font/vjs.eot">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/video-js/font/vjs.svg">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/video-js/font/vjs.ttf">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/video-js/font/vjs.woff">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/video-js/video-js.css">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/video-js/video-js.min.css">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/video-js/video-js.swf">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/video-js/video.dev.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/video-js/video.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/Uploader.swf">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.css">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.custom.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.custom.min.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.flashonly.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.flashonly.min.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.html5only.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.html5only.min.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.min.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.withoutimage.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/webuploader/webuploader.withoutimage.min.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/xss.min.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/zeroclipboard/ZeroClipboard.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/third-party/zeroclipboard/ZeroClipboard.swf">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/ueditor.all.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/ueditor.all.min.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/ueditor.config.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/ueditor.parse.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Common/ueditor/ueditor.parse.min.js">
+      <publishTime>07/17/2017 08:41:38</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Form/Baidueditor.html">
+      <publishTime>09/10/2017 07:46:11</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Form/FormConfig.js">
+      <publishTime>09/18/2017 07:31:47</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Form/FormEngine.js">
+      <publishTime>09/18/2017 07:10:44</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Form/FormStyle.css">
+      <publishTime>09/17/2017 07:42:01</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Grid/GridConfigJS.js">
+      <publishTime>09/16/2017 20:31:49</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Grid/GridEngine.js">
+      <publishTime>09/17/2017 06:59:43</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Grid/GridStyle.css">
+      <publishTime>09/17/2017 07:40:47</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Tab/TabEngine.js">
+      <publishTime>09/15/2017 08:17:29</publishTime>
+    </File>
+    <File Include="wwwroot/Plat/Tab/TabStyle.css">
+      <publishTime>09/17/2017 07:40:59</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/demo.css">
+      <publishTime>09/16/2017 20:26:40</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/demo_fontclass.html">
+      <publishTime>09/18/2017 06:53:01</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/demo_symbol.html">
+      <publishTime>09/16/2017 20:26:40</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/demo_unicode.html">
+      <publishTime>09/16/2017 20:26:40</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/iconfont.css">
+      <publishTime>09/16/2017 20:26:40</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/iconfont.eot">
+      <publishTime>09/16/2017 20:26:40</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/iconfont.js">
+      <publishTime>09/16/2017 20:26:40</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/iconfont.svg">
+      <publishTime>09/16/2017 20:26:40</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/iconfont.ttf">
+      <publishTime>09/16/2017 20:26:40</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/iconfont.woff">
+      <publishTime>09/16/2017 20:26:40</publishTime>
+    </File>
+    <File Include="wwwroot/Style/AibabaIcon/SelIcon.html">
+      <publishTime>09/18/2017 07:06:02</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/add-red.png">
+      <publishTime>03/31/2016 15:47:20</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/add-red2.png">
+      <publishTime>03/31/2016 15:47:20</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/add.png">
+      <publishTime>12/27/2016 09:44:21</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/administrator1 %28add%29.png">
+      <publishTime>12/27/2016 09:44:21</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/check out.png">
+      <publishTime>12/27/2016 09:44:21</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/comment1 %28edit%29.png">
+      <publishTime>12/27/2016 09:44:21</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/computer1 %28edit%29.png">
+      <publishTime>12/27/2016 09:44:21</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/database field %28add%29.png">
+      <publishTime>01/04/2017 09:34:01</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/database table %28add%29.png">
+      <publishTime>01/04/2017 09:34:01</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/delete-red.png">
+      <publishTime>03/31/2016 15:47:20</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/delete.gif">
+      <publishTime>08/13/2015 15:46:37</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/delete.png">
+      <publishTime>12/27/2016 09:44:21</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/Delete1.png">
+      <publishTime>03/14/2017 08:55:08</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/delete2.png">
+      <publishTime>11/22/2016 18:57:08</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/down.png">
+      <publishTime>05/08/2017 11:27:00</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/edit-red.png">
+      <publishTime>04/21/2016 17:32:44</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/edit.png">
+      <publishTime>12/27/2016 09:44:21</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/last.png">
+      <publishTime>12/27/2016 09:44:21</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/loading.gif">
+      <publishTime>02/08/2014 19:23:30</publishTime>
+    </File>
+    <File Include="wwwroot/Style/CommonIcon/search.png">
+      <publishTime>12/27/2016 09:44:21</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/editor.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/imagebrowser.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/indeterminate.gif">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/loading-image.gif">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/loading.gif">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/loading_2x.gif">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/markers.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/markers_2x.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/slider-h.gif">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/slider-v.gif">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/sprite.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/sprite_2x.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/sprite_kpi.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/Bootstrap/sprite_kpi_2x.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSans-Bold.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSans-BoldOblique.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSans-ExtraLight.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSans-Oblique.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSans.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSansMono-Bold.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSansMono-BoldOblique.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSansMono-Oblique.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSansMono.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSerif-Bold.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSerif-BoldItalic.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSerif-Italic.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/DejaVuSerif.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/DejaVu/LICENSE.txt">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/glyphs/KendoUIGlyphs.eot">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/glyphs/KendoUIGlyphs.svg">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/glyphs/KendoUIGlyphs.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/glyphs/KendoUIGlyphs.woff">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/glyphs/WebComponentsIcons.eot">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/glyphs/WebComponentsIcons.svg">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/glyphs/WebComponentsIcons.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/fonts/glyphs/WebComponentsIcons.woff">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/images/back.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/images/kendoui.svg">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/images/kendoui.ttf">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/images/kendoui.woff">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/images/wp8_icons.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/images/wp8_inverseicons.png">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.bootstrap-v4.min.css">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.bootstrap-v4.min.css.map">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.bootstrap.min.css">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.bootstrap.min.css.map">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.bootstrap.mobile.min.css">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.bootstrap.mobile.min.css.map">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.common-bootstrap.core.min.css">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.common-bootstrap.core.min.css.map">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.common-bootstrap.min.css">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.common-bootstrap.min.css.map">
+      <publishTime>06/22/2017 18:30:05</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.common.core.min.css">
+      <publishTime>06/22/2017 18:30:06</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.common.core.min.css.map">
+      <publishTime>06/22/2017 18:30:06</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.common.min.css">
+      <publishTime>06/22/2017 18:30:06</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/kendo.common.min.css.map">
+      <publishTime>06/22/2017 18:30:06</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/brushed-metal.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots1.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots10.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots11.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots12.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots13.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots2.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots3.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots4.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots5.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots6.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots7.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots8.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/dots9.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/glass-lighter.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/glass.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/highlight.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/hsv-gradient.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/hue.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/leather1.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/leather2.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/noise.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/stripe1.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/stripe2.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/stripe3.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/stripe4.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/stripe5.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/stripe6.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/transparency.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+    <File Include="wwwroot/Style/Kendo/textures/transtexture.png">
+      <publishTime>06/22/2017 18:30:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

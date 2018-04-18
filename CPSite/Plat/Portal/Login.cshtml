@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>系统登录</title>
+    @Html.Raw(ViewBag.CPWebRootPath)
+    @Html.Raw(ViewBag.CPCurUserId)
+    @Html.Raw(ViewBag.CPCurUserIden)
+    <script type="text/javascript" src="../../Plat/Common/JS/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="../../Plat/Common/JS/Common.js"></script>
+    <script type="text/javascript" src="../../Plat/Portal/Login.js"></script>
+    <link href="../../Style/@ViewBag.CPSkin/Portal/Login.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript">
+        var DefaultUrl = "@ViewBag.DefaultUrl";
+    </script>
+</head>
+<body>
+    <div class="login">
+        <div class="message">系统登录</div>
+        <div id="darkbannerwrap"></div>
+            <input name="action" value="login" type="hidden">
+            <input id="username" placeholder="用户名" required="" type="text" value="admin">
+            <hr class="hr15">
+            <input id="password" placeholder="密码" required="" type="password">
+            <hr class="hr15">
+            <input value="登录" style="width:100%;" type="button" onclick="LoginMethod()"/>
+            <hr class="hr20">
+            <!-- 帮助<a onClick="alert('请联系管理员')">忘记密码</a> -->
+       
+    </div>
+    @*<div class="copyright">
+        © 2016品牌名称 by<a href="http://www.17sucai.com/" target="_blank">17素材网</a>
+    </div>*@
+</body>
+</html>

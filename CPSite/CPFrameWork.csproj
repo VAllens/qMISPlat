@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+    <PackageReference Include="BuildBundlerMinifier" Version="2.6.362" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Library\Common\CPFrameWork.Global\CPFrameWork.Global.csproj" />
+    <ProjectReference Include="..\Library\Common\CPFrameWork.Utility\CPFrameWork.Utility.csproj" />
+    <ProjectReference Include="..\Library\Common\NVelocity\NVelocity.csproj" />
+    <ProjectReference Include="..\Library\Common\UEditorNetCore\UEditorNetCore.csproj" />
+    <ProjectReference Include="..\Library\Plat\CPFameWork.Portal\CPFameWork.Portal.csproj" />
+    <ProjectReference Include="..\Library\Plat\CPFrameWork.Flow\CPFrameWork.Flow.csproj" />
+    <ProjectReference Include="..\Library\Plat\CPFrameWork.Organ\CPFrameWork.Organ.csproj" />
+    <ProjectReference Include="..\Library\Plat\CPFrameWork.UIInterface\CPFrameWork.UIInterface.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Plat\Common\jquery.mCustomScrollbar\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Plat\Portal\ModuleConfig.js" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JSONSchema="" json_1json__JSONSchema="http://json.schemastore.org/chrome-manifest" /></VisualStudio></ProjectExtensions>
+
+</Project>

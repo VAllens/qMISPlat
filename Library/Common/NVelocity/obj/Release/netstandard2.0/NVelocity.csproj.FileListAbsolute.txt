@@ -1,0 +1,9 @@
+E:\MyCloud\Code\Library\Common\NVelocity\bin\Release\netstandard2.0\NVelocity.deps.json
+E:\MyCloud\Code\Library\Common\NVelocity\bin\Release\netstandard2.0\NVelocity.dll
+E:\MyCloud\Code\Library\Common\NVelocity\bin\Release\netstandard2.0\NVelocity.pdb
+E:\MyCloud\Code\Library\Common\NVelocity\obj\Release\netstandard2.0\NVelocity.csproj.CoreCompileInputs.cache
+E:\MyCloud\Code\Library\Common\NVelocity\obj\Release\netstandard2.0\NVelocity.AssemblyInfoInputs.cache
+E:\MyCloud\Code\Library\Common\NVelocity\obj\Release\netstandard2.0\NVelocity.AssemblyInfo.cs
+E:\MyCloud\Code\Library\Common\NVelocity\obj\Release\netstandard2.0\NVelocity.dll
+E:\MyCloud\Code\Library\Common\NVelocity\obj\Release\netstandard2.0\NVelocity.pdb
+E:\MyCloud\Code\Library\Common\NVelocity\obj\Release\netstandard2.0\NVelocity.csprojResolveAssemblyReference.cache

@@ -13,6 +13,7 @@ qMISPlat(业务配置开发平台)是一套基于.net core 2.0、跨平台的，
 演示站点：http://www.qmisplat.com/CPSite/Plat/Portal/Login
 
 源码下载：https://gitee.com/qMISPlat/NetCore
+
 开发语言: VS2017, .net core 2.0 
 
 浏览器支持：Chrome、IE11、国产浏览器
@@ -63,9 +64,18 @@ qMISPlat(业务配置开发平台)是一套基于.net core 2.0、跨平台的，
 9、丰富的二次开发接口
 
 
-如下所示：
+ **流程定制器:** 
 ![流程定制器](http://www.qmisplat.com/GITPIC/fLOW-1.PNG "流程定制器")
- 
 
+ **流程节点信息配置** 
+
+ ![流程节点信息配置](http://www.qmisplat.com/GITPIC/fLOW-2.PNG "流程节点信息配置")
+
+ **流程运行时界面** 
+![流程运行时界面](http://www.qmisplat.com/GITPIC/fLOW-3.PNG  "流程运行时界面")
+
+ **流程运行监控** 
+
+![流程运行监控](http://www.qmisplat.com/GITPIC/fLOW-4.PNG  "流程运行监控")
 
 

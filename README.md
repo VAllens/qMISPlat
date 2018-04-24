@@ -14,13 +14,19 @@ qMISPlat(业务配置开发平台)是一套基于.net core 2.0、跨平台的，
 
 源码下载：https://gitee.com/qMISPlat/NetCore
 
+技术交流QQ群：311562286
+
+部署手册：http://www.qmisplat.com/Support.html
+
+二次开发帮助手册：http://www.qmisplat.com/CPSite/Plat/Common/Help
+
 开发语言: VS2017, .net core 2.0 
 
 浏览器支持：Chrome、IE11、国产浏览器
 
 组成部分: 流程设计器、表单设计器、通用列表配置工具、通用树配置工具
 
-技术交流QQ群：311562286
+
 
 
  **_MISPlat能起到什么作用？_** 
@@ -79,3 +85,21 @@ qMISPlat(业务配置开发平台)是一套基于.net core 2.0、跨平台的，
 ![流程运行监控](http://www.qmisplat.com/GITPIC/fLOW-4.PNG  "流程运行监控")
 
 
+ **_列表定制版块_** 
+
+通过简单配置一条SQL语句，即可实现如下列表展现功能：
+
+1、数据以列表形式展现；
+
+2、列表运行分页、排序、查询、分组和导出Excel等功能；
+
+3、支持多表头展现形式；支持各种列类型展现；
+
+4、丰富的二次开发接口;
+
+ **分组列表：** 
+
+![分组列表](http://www.qmisplat.com/GITPIC/List-1.PNG "分组列表")
+
+ **列表配置：** 
+![列表配置](http://www.qmisplat.com/GITPIC/List-2.PNG "列表配置")

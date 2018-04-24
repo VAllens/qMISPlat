@@ -64,8 +64,8 @@ qMISPlat(业务配置开发平台)是一套基于.net core 2.0、跨平台的，
 
 
 如下所示：
-
+![流程定制器](http://www.qmisplat.com/GITPIC/fLOW-1.PNG "流程定制器")
  
-流程定制器
+
 
 

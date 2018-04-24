@@ -197,8 +197,9 @@ $(function () {
             });
         });
     });
+    //初始化消息提醒
+    CPFrameInitMsg();
     //设置右侧高度
-
     $(".layui-tab-content").height($(window).height() - $("#CPFrameTopNav").height() - $(".leaf-main-content-content").height()-8);
 })
 //记录当前点击的模块ID
@@ -262,3 +263,44 @@ function UserPhotoClick(userId)
     var moduleId = -1;
     CPFrameAddTab("个人信息维护", url, moduleId, 1);
 }
+
+/****************消息相关操作*********************************/
+function CPFrameInitMsg() {
+    var url = CPWebRootPath + "/api/CPModuleEngine/GetMsg?MsgType=2&MsgCount=50&CurUserId=" + CPCurUserId + "&CurUserIden=" + CPCurUserIden;
+    $.get(url, function (data) {
+        if (data.Result == false) {
+            alert(data.ErrorMsg);
+            return false;
+        }
+        console.log(data.MsgCol);
+        var sHTML = "";
+        $.each(data.MsgCol, function (nIndex, nObj) {
+            var sTitle = nObj.MsgTitle;
+            if (sTitle.length > 16) {
+                sTitle = sTitle.substring(0, 15) + "...";
+            }
+            sHTML += "<dd >";
+            sHTML += "      <a href='javascript:;' data-url='{$页面地址$}' data-title='" + nObj.MsgTitle + "' onclick='javascript:HeaderManaTask(this);'>";
+            sHTML += "          <span class='photo' style='    float: left;    margin: 0 6px 6px 0;'>";
+            sHTML += "              <img src='/api/CPCommonEngine/ShowPicture?FilePath=Form201710291829260020%2f2017%2f11%2f5%2f081403%2f1-091104191214.jpg' class='img-circle' style='border-radius:50px;width:50px;height:50px;' alt=''>";
+            sHTML += "          </span>";
+            sHTML += "          <span class='subject' style='display: block;margin-left: 46px;'>";
+            sHTML += "              <span class='from' style='font-size: 12px;font-weight: 600;color: #5b9bd1'>" + nObj.MsgSendUserName + "</span>";
+            sHTML += "              <span class='time' style='font-size: 12px;font-weight: 400;opacity: 0.5;float: right;'>" + nObj.ReciveTime + "</span>";
+            sHTML += "          </span>";
+            sHTML += "          <span class='message' style='display: block !important;font-size: 12px;line-height: 1.3;margin-left: 46px;'>" + sTitle + "</span>";
+            sHTML += "      </a>";
+            sHTML += "  </dd>";
+        });
+        if (sHTML != "") {
+            $("#CPULTaskNotice").html(sHTML);
+            $("#CPULTaskNotice").parent().show();
+        }
+        else {
+            $("#CPULTaskNotice").html("");
+            $("#CPULTaskNotice").parent().hide();
+        }
+    });
+    //再加其它参数
+}
+/****************消息相关操作End*********************************/

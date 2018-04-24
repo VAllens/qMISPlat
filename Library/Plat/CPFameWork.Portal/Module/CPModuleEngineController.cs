@@ -11,7 +11,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 
-namespace CPFrameWork.UIInterface.Tree
+namespace CPFameWork.Portal.Module
 {
     public class CPModuleEngineController : CPWebApiBaseController
     {

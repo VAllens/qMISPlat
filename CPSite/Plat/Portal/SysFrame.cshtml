@@ -30,26 +30,36 @@
             <div class="navbar-header">
                 <div style="padding-top:14px;">@ViewBag.SystemTitle</div>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="nav navbar-nav navbar-right nav-actions" style="padding-top:4px;">
-                    <li class="navbar-li" style="display:;">
+            <div class="collapse navbar-collapse" id="navbar-menu"> 
+
+                <ul class=" layui-nav nav navbar-nav navbar-right nav-actions" style="background-color:#f9fbfb;">
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><i class="icon iconfont icon-activity" style="font-size:26px;"></i></a>
+                        <dl class="layui-nav-child" style="top:48px;left:-200px; width:300px;"  id="CPULTaskNotice">
+                            <dd><a href="">移动模块</a></dd>
+                            <dd><a href="">后台模版</a></dd>
+                            <dd class="layui-this"><a href="">选中项</a></dd>
+                            <dd><a href="">电商平台</a></dd>
+                        </dl>
+                    </li>
+                    @* <li class="navbar-li" style="display:none;">
                         <a href="">
                             <i class="icon iconfont icon-activity" style="font-size:26px;"></i>
                         </a>
-                        <ul class="dropdown-menu system-list" style="height: 407px; padding-top: 0px; margin-top: 2px; padding-bottom: 0px; margin-bottom: 0px;left: -80px;border:0">
+                        <ul class="dropdown-menu system-list" id="CPULTaskNotice" style="height: 407px;padding-top: 0px; margin-top: 2px; padding-bottom: 0px; margin-bottom: 0px;left:-200px;border:0">
                             <li>
-                                <a style="padding: 0px 0px;" href="javascript:;" onclick="window.location='?SysId=21';">
-                                    <i class="icon iconfont icon-other" style="font-size:24px;vertical-align:middle;"></i>系统管理
-                                </a>
-                            </li>
-                            <li>
-                                <a style="padding: 0px 0px;" href="javascript:;" onclick="window.location='?SysId=21';">
-                                    <i class="icon iconfont icon-other" style="font-size:24px;vertical-align:middle;"></i>系统管理
-                                </a>
-                            </li>
+                            <a style="padding: 0px 0px;" href="javascript:;" onclick="window.location='?SysId=21';">
+                                <i class="icon iconfont icon-other" style="font-size:24px;vertical-align:middle;"></i>系统管理
+                            </a>
+                        </li>
+                        <li>
+                            <a style="padding: 0px 0px;" href="javascript:;" onclick="window.location='?SysId=21';">
+                                <i class="icon iconfont icon-other" style="font-size:24px;vertical-align:middle;"></i>系统管理
+                            </a>
+                        </li>
                         </ul>
-                    </li>
-                   
+                    </li>*@
+
                     <li>
                         <a href="javascript:;" onclick="LoginOut();" title="注销">
                             <i class="icon iconfont icon-kaiguan" style="font-size:30px;"></i>
@@ -167,6 +177,17 @@
     </div>
     <!--foot start-->
     <!--foot end-->
-
+    <style type="text/css">
+        .navbar-nav:after {
+            position: absolute;
+            top: -6px;
+            right: 21px;
+            display: inline-block !important;
+            border-right: 6px solid transparent;
+            border-bottom: 6px solid #fff;
+            border-left: 6px solid transparent;
+            content: '';
+        }
+    </style>
 </body>
 </html>

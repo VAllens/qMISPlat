@@ -4,6 +4,9 @@ qMISPlat是一套基于.net core、跨平台的，面向开发人员和具有一
 
 官方网站：http://www.qmisplat.com/
 
+演示站点：http://www.qmisplat.com/CPSite/Plat/Portal/Login
+
+源码下载：https://gitee.com/qMISPlat/NetCore
 开发语言: VS2017, .net core 2.0 
 
 浏览器支持：Chrome、IE11、国产浏览器
